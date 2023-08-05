@@ -5,7 +5,7 @@ import Globe from "react-globe.gl";
 function App() {
   const globeEl = useRef();
 
-  const N_PATHS = 13;
+  const N_PATHS = 20;
   const MAX_POINTS_PER_LINE = 10000;
   const MAX_STEP_DEG = 1;
   const MAX_STEP_ALT = 0.015;
@@ -50,9 +50,15 @@ function App() {
   // const colorScheme = () => ["#8600cf", "red"];
   // yellow and purple
   // const colorScheme = () => ["#7800b0", "#ff7c30"];
-  // blue and yellow
-  const colorScheme = () => ["blue", "#ff7c30"];
   // const colorScheme = () => ["red", "blue"];
+  // light blue and yellow
+  // const colorScheme = () => ["#006db0", "#ff7c30"];
+
+  //FAVES
+  // blue and yellow
+  // const colorScheme = () => ["blue", "#ff7c30"];
+  // earth
+  const colorScheme = () => ["#006db0", "#24bf62"];
 
   return (
     <div className="App">
