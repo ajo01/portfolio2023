@@ -77,7 +77,34 @@ function App() {
           Software Engineer | Web Developer | Data Visualization
         </div>
       </div>
-      {/* <div className="nav">Home</div> */}
+      <div className="nav">
+        <div onClick={() => document.getElementById("home").scrollIntoView()}>
+          Home
+        </div>
+        <div onClick={() => document.getElementById("about").scrollIntoView()}>
+          About
+        </div>
+        <div
+          onClick={() => document.getElementById("experience").scrollIntoView()}
+        >
+          Experience
+        </div>
+        <div
+          onClick={() => document.getElementById("industry").scrollIntoView()}
+        >
+          Industry
+        </div>
+        <div
+          onClick={() => document.getElementById("projects").scrollIntoView()}
+        >
+          Projects
+        </div>
+        <div
+          onClick={() => document.getElementById("contact").scrollIntoView()}
+        >
+          Contact
+        </div>
+      </div>
     </div>
   );
 }
