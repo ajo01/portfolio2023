@@ -46,25 +46,13 @@ function App() {
     endLng: (Math.random() - 0.5) * 360,
   }));
 
-  // red and purple
-  // const colorScheme = () => ["#8600cf", "red"];
-  // yellow and purple
-  // const colorScheme = () => ["#7800b0", "#ff7c30"];
-  // const colorScheme = () => ["red", "blue"];
-  // light blue and yellow
-  // const colorScheme = () => ["#006db0", "#ff7c30"];
-
-  //FAVES
-  // blue and yellow
-  // const colorScheme = () => ["blue", "#ff7c30"];
-  // earth
   const colorScheme = () => ["#006db0", "#24bf62"];
 
   return (
     <div className="App">
       <Globe
         ref={globeEl}
-        // atmosphereColor="orange"
+        atmosphereAltitude={0.3}
         pathsData={gData}
         pathColor={colorScheme}
         pathDashLength={0.01}
