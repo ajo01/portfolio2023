@@ -5,7 +5,7 @@ import Globe from "react-globe.gl";
 function App() {
   const globeEl = useRef();
 
-  const N_PATHS = 10;
+  const N_PATHS = 13;
   const MAX_POINTS_PER_LINE = 10000;
   const MAX_STEP_DEG = 1;
   const MAX_STEP_ALT = 0.015;
@@ -35,7 +35,7 @@ function App() {
 
     // Auto-rotate
     globe.controls().autoRotate = true;
-    globe.controls().autoRotateSpeed = 0.5;
+    globe.controls().autoRotateSpeed = 0.9;
   }, []);
 
   const N = 5;
@@ -46,19 +46,28 @@ function App() {
     endLng: (Math.random() - 0.5) * 360,
   }));
 
+  // red and purple
+  // const colorScheme = () => ["#8600cf", "red"];
+  // yellow and purple
+  // const colorScheme = () => ["#7800b0", "#ff7c30"];
+  // blue and yellow
+  const colorScheme = () => ["blue", "#ff7c30"];
+  // const colorScheme = () => ["red", "blue"];
+
   return (
     <div className="App">
       <Globe
         ref={globeEl}
+        // atmosphereColor="orange"
         pathsData={gData}
-        pathColor={() => ["rgba(0,0,255,0.6)", "rgba(255,0,0,0.6)"]}
+        pathColor={colorScheme}
         pathDashLength={0.01}
         pathDashGap={0.004}
         pathDashAnimateTime={100000}
         pathPointAlt={0.1}
         pathTransitionDuration={1000}
         arcsData={arcsData}
-        arcColor={() => ["red", "blue"]}
+        arcColor={colorScheme}
         arcDashLength={() => Math.random()}
         arcDashGap={() => Math.random()}
         arcDashAnimateTime={() => Math.random() * 4000 + 2000}
