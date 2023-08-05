@@ -5,7 +5,7 @@ import Globe from "react-globe.gl";
 function App() {
   const globeEl = useRef();
 
-  const N_PATHS = 20;
+  const N_PATHS = 10;
   const MAX_POINTS_PER_LINE = 10000;
   const MAX_STEP_DEG = 1;
   const MAX_STEP_ALT = 0.015;
@@ -46,28 +46,38 @@ function App() {
     endLng: (Math.random() - 0.5) * 360,
   }));
 
-  const colorScheme = () => ["#006db0", "#24bf62"];
+  const colorScheme = () => ["#006db0", "white"];
 
   return (
     <div className="App">
-      <Globe
-        ref={globeEl}
-        atmosphereAltitude={0.3}
-        pathsData={gData}
-        pathColor={colorScheme}
-        pathDashLength={0.01}
-        pathDashGap={0.004}
-        pathDashAnimateTime={100000}
-        pathPointAlt={0.1}
-        pathTransitionDuration={1000}
-        arcsData={arcsData}
-        arcColor={colorScheme}
-        arcDashLength={() => Math.random()}
-        arcDashGap={() => Math.random()}
-        arcDashAnimateTime={() => Math.random() * 4000 + 2000}
-        arcAltitude={0.6}
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
-      />
+      <div className="globe-container">
+        <Globe
+          ref={globeEl}
+          height={550}
+          atmosphereAltitude={0.3}
+          pathsData={gData}
+          pathColor={colorScheme}
+          pathDashLength={0.01}
+          pathDashGap={0.004}
+          pathDashAnimateTime={100000}
+          pathPointAlt={0.1}
+          pathTransitionDuration={1000}
+          arcsData={arcsData}
+          arcColor={colorScheme}
+          arcDashLength={() => Math.random()}
+          arcDashGap={() => Math.random()}
+          arcDashAnimateTime={() => Math.random() * 4000 + 2000}
+          arcAltitude={0.6}
+          globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
+        />
+      </div>
+      <div className="text-container">
+        <div className="title">AMY JO</div>
+        <div className="subtitle">
+          Software Engineer | Web Developer | Data Visualization
+        </div>
+      </div>
+      {/* <div className="nav">Home</div> */}
     </div>
   );
 }
