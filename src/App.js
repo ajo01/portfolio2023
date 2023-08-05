@@ -69,6 +69,7 @@ function App() {
           arcDashAnimateTime={() => Math.random() * 4000 + 2000}
           arcAltitude={0.6}
           globeImageUrl="//unpkg.com/three-globe/example/img/earth-dark.jpg"
+          backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         />
       </div>
       <div className="text-container">
