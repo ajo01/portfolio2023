@@ -11,12 +11,7 @@ const Project = ({ src, desc, link, index }) => {
           <div>{link && <a href={link}>See here</a>}</div>
         </div>
 
-        <img
-          className={styles.img}
-          src={src}
-          alt=""
-          style={index === 3 ? { position: "absolute", right: 0 } : null}
-        />
+        <img className={styles.img} src={src} alt="" />
       </div>
     );
   }
