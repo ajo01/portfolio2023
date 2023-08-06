@@ -75,6 +75,7 @@ const Contact = () => {
             id={styles.msg}
             placeholder="Type your message here"
             name="message"
+            required
           />
           <div id={styles.submit}>
             <button
