@@ -1,0 +1,53 @@
+.about {
+  padding: 150px 200px 200px 200px;
+  color: white;
+}
+
+.text {
+  margin-top: 24px;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.luminaireContainer {
+  position: absolute;
+  right: 100px;
+}
+
+.luminaire {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 20px #fff;
+  transition: box-shadow 4s ease-out;
+  animation: spin 16s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.luminaire::before,
+.luminaire::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 8s, transform 8s;
+  box-shadow: 0 0 80px 40px #fff, 0 0 200px 100px rgb(0, 170, 255);
+}
+
+.luminaire::before {
+  transform: translateX(-100px);
+  opacity: 1;
+}
