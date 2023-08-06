@@ -9,18 +9,16 @@ const Project = ({ src, desc, link, index }) => {
           <div>{desc}</div>
           <br />
           <div>
-            <a
-              href={link}
-              style={{
-                color: "#8bd5ff",
-              }}
-            >
-              See here
-            </a>
+            <a href={link}>See here</a>
           </div>
         </div>
 
-        <img className={styles.img} src={src} alt="" />
+        <img
+          className={styles.img}
+          src={src}
+          alt=""
+          style={{ position: "absolute", right: 0 }}
+        />
       </div>
     );
   }
@@ -31,14 +29,7 @@ const Project = ({ src, desc, link, index }) => {
         <div>{desc}</div>
         <br />
         <div>
-          <a
-            href={link}
-            style={{
-              color: "#8bd5ff",
-            }}
-          >
-            See here
-          </a>
+          <a href={link}>See here</a>
         </div>
       </div>
     </div>

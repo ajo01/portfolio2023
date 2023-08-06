@@ -42,7 +42,7 @@ const Projects = () => {
     {
       name: "Web Cosedit",
       description:
-        "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types. Capable of stream manipulation, embedded image extraction, editing document security settings, real-time PDF preview, etc.",
+        "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types. Capable of stream manipulation, embedded image extraction, editing document security settings, real-time PDF preview, etc. Highly scalable and works with thousand-paged documents.",
       src: cosedit,
       link: "https://cosedit.com/",
     },
