@@ -12,10 +12,6 @@
   font-size: 14px;
 }
 
-.project:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.036);
-}
-
 .projectsContainer {
   padding: 200px 0 100px 0;
   color: white;
@@ -85,7 +81,7 @@
 }
 
 .star:nth-child(1) {
-  animation: orbit 40s linear infinite;
+  animation: orbit 60s linear infinite;
 }
 
 .star:nth-child(2) {
@@ -93,15 +89,15 @@
 }
 
 .star:nth-child(3) {
-  animation: orbit3 80s linear infinite;
+  animation: orbit3 60s linear infinite;
 }
 
 .star:nth-child(4) {
-  animation: orbit4 90s linear infinite;
+  animation: orbit4 60s linear infinite;
 }
 
 .star:nth-child(5) {
-  animation: orbit5 100s linear infinite;
+  animation: orbit5 60s linear infinite;
 }
 
 @keyframes orbit {
@@ -116,40 +112,44 @@
 
 @keyframes orbit2 {
   from {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(30deg) translateX(200px)
+      rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(200px)
+    transform: translate(-50%, -50%) rotate(390deg) translateX(200px)
       rotate(-360deg);
   }
 }
 
 @keyframes orbit3 {
   from {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(300px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(120deg) translateX(300px)
+      rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(300px)
+    transform: translate(-50%, -50%) rotate(480deg) translateX(300px)
       rotate(-360deg);
   }
 }
 
 @keyframes orbit4 {
   from {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(500px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(90deg) translateX(500px)
+      rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(500px)
+    transform: translate(-50%, -50%) rotate(450deg) translateX(500px)
       rotate(-360deg);
   }
 }
 
 @keyframes orbit5 {
   from {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(600px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(60deg) translateX(600px)
+      rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(600px)
+    transform: translate(-50%, -50%) rotate(420deg) translateX(600px)
       rotate(-360deg);
   }
 }
