@@ -5,15 +5,17 @@ import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Nav from "./components/Nav/Nav";
 import GlobePage from "./components/Globe/Globe";
+import { useDispatch } from "react-redux";
+import { setDetachNav } from "./redux/uiSlice";
 
 function App() {
-  const [detachNav, setDetachNav] = useState(false);
   const scrollableDivRef = useRef(null);
+  const dispatch = useDispatch();
 
-  const handleScroll = () => {
+  const handleScroll = async () => {
     if (scrollableDivRef.current) {
       const scrollTop = scrollableDivRef.current.scrollTop;
-      setDetachNav(scrollTop > 100);
+      await dispatch(setDetachNav(scrollTop > 100));
     }
   };
 
@@ -26,7 +28,7 @@ function App() {
         <Projects />
         <Contact />
       </div>
-      <Nav detachNav={detachNav} />
+      <Nav />
     </div>
   );
 }
