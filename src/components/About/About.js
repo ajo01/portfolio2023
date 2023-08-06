@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className={styles.about}>
       <div className="subtitle"> About</div>
-      <div className={styles.text}>
+      <div className="component-text">
         I'm a 4th year Computer Science student at the University of British
         Columbia with 16 months of industry experience in fullstack, web
         development, and API design. I have a passion for creating interactive

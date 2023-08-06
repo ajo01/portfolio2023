@@ -5,7 +5,9 @@ const Contact = () => {
   return (
     <div className={styles.contact}>
       <div className="subtitle"> Contact</div>
-      <div>Have a question or want to work together?</div>
+      <div className="component-text">
+        Have a question or want to work together? Get in touch!
+      </div>
     </div>
   );
 };

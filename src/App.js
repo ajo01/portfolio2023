@@ -79,7 +79,7 @@ function App() {
         </div>
         <div className="text-container">
           <div className="title">AMY JO</div>
-          <div className="subtitle">
+          <div className="sub">
             Software Engineer | Web Developer | Data Visualization
           </div>
         </div>
