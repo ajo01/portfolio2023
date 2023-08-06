@@ -8,9 +8,7 @@ const Project = ({ src, desc, link, index }) => {
         <div className={styles.info}>
           <div>{desc}</div>
           <br />
-          <div>
-            <a href={link}>See here</a>
-          </div>
+          <div>{link && <a href={link}>See here</a>}</div>
         </div>
 
         <img
@@ -28,9 +26,7 @@ const Project = ({ src, desc, link, index }) => {
       <div className={styles.info}>
         <div>{desc}</div>
         <br />
-        <div>
-          <a href={link}>See here</a>
-        </div>
+        <div>{link && <a href={link}>See here</a>}</div>
       </div>
     </div>
   );
