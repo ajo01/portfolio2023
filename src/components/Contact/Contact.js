@@ -49,8 +49,6 @@ const Contact = () => {
         <div class={styles.shooting_star} />
         <div class={styles.shooting_star} />
         <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
       </div>
 
       <div className={styles.form}>
@@ -78,7 +76,14 @@ const Contact = () => {
             placeholder="Type your message here"
             name="message"
           />
-          <div id={styles.submit}> </div>
+          <div id={styles.submit}>
+            <button
+              className={styles.glowingBtn}
+              onClick={(e) => handleSubmitClick(e)}
+            >
+              <span className={styles.glowingTxt}>Submit</span>
+            </button>
+          </div>
           {submitVisible && <div className={styles.submitMsg}>Submitted!</div>}
         </div>
 

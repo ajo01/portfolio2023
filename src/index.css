@@ -1,5 +1,6 @@
 :root {
   --blue: #006db0;
+  --glow-color: hsl(197, 100%, 69%);
 }
 
 body {
