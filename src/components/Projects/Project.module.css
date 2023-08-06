@@ -15,6 +15,11 @@
   transition: 0.4s;
 }
 
+.ref {
+  position: absolute;
+  top: 40px;
+}
+
 .info {
   display: block;
   padding: 40px;

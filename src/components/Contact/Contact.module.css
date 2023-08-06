@@ -5,6 +5,11 @@
   display: flex;
 }
 
+.ref {
+  position: absolute;
+  top: 50px;
+}
+
 .leftBox {
   width: 70%;
 }

@@ -8,6 +8,11 @@
   right: 120px;
 }
 
+.ref {
+  position: absolute;
+  top: -60px;
+}
+
 .luminaire {
   position: relative;
   display: inline-block;

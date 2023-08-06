@@ -50,7 +50,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsContainer}>
-      <div id="projects"></div>
+      <div id="projects" className={styles.ref}></div>
       <div className="subtitle" style={{ paddingLeft: 200, paddingBottom: 50 }}>
         Projects
       </div>
