@@ -17,7 +17,7 @@
 
 .ref {
   position: absolute;
-  top: 40px;
+  top: 80px;
 }
 
 .info {
@@ -76,7 +76,7 @@
   width: 2px;
   height: 2px;
   background-color: white;
-  box-shadow: 0 0 2px 1px #fff;
+  box-shadow: 0 0 2px 1px #fff, 0 0 4px 2px rgb(0, 170, 255);
   border-radius: 50%;
   top: 50%;
   left: 50%;
