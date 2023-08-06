@@ -45,7 +45,15 @@ const Contact = () => {
         Have a question or want to work together? Get in touch!
       </div>
 
-      {/* <div className={styles.form}>
+      <div class={styles.night}>
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+      </div>
+
+      <div className={styles.form}>
         <div className={styles.leftBox}>
           <div className={styles.inputContainer}>
             <input
@@ -82,9 +90,10 @@ const Contact = () => {
               paddingLeft: 0,
               fontSize: 18,
               textDecoration: "underline",
+              color: "#8bd5ff",
             }}
           >
-            amy jo
+            Amy Jo
           </a>
           <div className={styles.title} style={{ marginTop: 50 }}>
             Location
@@ -94,14 +103,6 @@ const Contact = () => {
             <div>British Columbia, Canada</div>
           </div>
         </div>
-      </div> */}
-
-      <div class={styles.night}>
-        <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
       </div>
     </div>
   );
