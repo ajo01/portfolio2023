@@ -1,4 +1,81 @@
 .contact {
   padding: 200px;
   color: white;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.form {
+  margin: auto;
+  margin-top: 40px;
+  justify-content: center;
+  font-size: 20px;
+  display: flex;
+}
+
+.leftBox {
+  width: 70%;
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.nameInput {
+  margin-left: 0;
+
+  margin-right: 5px;
+}
+
+.emailInput {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.rightBox {
+  width: 30%;
+  padding: 0 40px;
+  font-size: 18px;
+}
+
+#submit {
+  margin-top: 30px;
+  text-align: left;
+}
+
+input {
+  padding: 8px 18px;
+  box-sizing: border-box;
+
+  width: 50%;
+  display: block;
+  background-color: transparent;
+  margin: 10px auto 20px auto;
+  transition: 0.3s;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border-radius: 2px;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus,
+#msg:focus {
+  border-color: purple;
+}
+
+#msg {
+  padding: 14px 18px;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  margin: 10px auto;
+  transition: 0.3s;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  border-radius: 2px;
+  height: 170px;
+  font-family: "Inter", sans-serif;
 }
