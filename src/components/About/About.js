@@ -4,6 +4,7 @@ import styles from "./About.module.css";
 const About = () => {
   return (
     <div className={styles.about}>
+      <div id="about" className={styles.ref}></div>
       <div className="subtitle"> About</div>
       <div className="component-text">
         I'm a 4th year Computer Science student at the University of British

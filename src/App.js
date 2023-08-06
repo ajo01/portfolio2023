@@ -49,7 +49,6 @@ function App() {
   }));
 
   const colorScheme = () => ["#006db0", "white"];
-  console.log(window.innerHeight * 0.8);
 
   return (
     <div className="App">
