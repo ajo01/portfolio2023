@@ -54,6 +54,13 @@ const Projects = () => {
       <div className="subtitle" style={{ paddingLeft: 200, paddingBottom: 50 }}>
         Projects
       </div>
+      <div className={styles.center}>
+        <div className={styles.star} />
+        <div className={styles.star} />
+        <div className={styles.star} />
+        <div className={styles.star} />
+        <div className={styles.star} />
+      </div>
       <div className={styles.projectList}>
         {projectList.map((project, i) => (
           <Project

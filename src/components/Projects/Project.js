@@ -17,7 +17,7 @@ const Project = ({ src, desc, link, index }) => {
           className={styles.img}
           src={src}
           alt=""
-          style={{ position: "absolute", right: 0 }}
+          style={index === 3 ? { position: "absolute", right: 0 } : null}
         />
       </div>
     );
