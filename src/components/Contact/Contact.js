@@ -39,12 +39,13 @@ const Contact = () => {
 
   return (
     <div className={styles.contact}>
+      <div id="contact" className={styles.ref}></div>
       <div className="subtitle"> Contact</div>
       <div className="component-text">
         Have a question or want to work together? Get in touch!
       </div>
 
-      <div className={styles.form}>
+      {/* <div className={styles.form}>
         <div className={styles.leftBox}>
           <div className={styles.inputContainer}>
             <input
@@ -69,7 +70,7 @@ const Contact = () => {
             placeholder="Type your message here"
             name="message"
           />
-          <div id={styles.submit}>{/* button */}</div>
+          <div id={styles.submit}> </div>
           {submitVisible && <div className={styles.submitMsg}>Submitted!</div>}
         </div>
 
@@ -93,6 +94,14 @@ const Contact = () => {
             <div>British Columbia, Canada</div>
           </div>
         </div>
+      </div> */}
+
+      <div class={styles.night}>
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
+        <div class={styles.shooting_star} />
       </div>
     </div>
   );
