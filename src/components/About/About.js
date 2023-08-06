@@ -7,14 +7,15 @@ const About = () => {
       <div id="about" className={styles.ref}></div>
       <div className="subtitle"> About</div>
       <div className="component-text">
-        I'm a 4th year Computer Science student at the University of British
-        Columbia with 16 months of industry experience in fullstack, web
-        development, and API design. I have a passion for creating interactive
-        and immersive digital experiences and have worked with technologies such
-        as MERN, TypeScript, Next.js, Python, Java, Tailwind, Webpack, D3.js,
-        Three.js, Docker, and Firebase. Previous experience includes shipping
-        major features at Jostle, as well as researching and developing
-        cutting-edge document processing technologies at Apryse.
+        I'm a senior Computer Science student at the University of British
+        Columbia with 16 months of industry experience in fullstack web
+        development, R&D, and API design. I have a passion for crafting
+        interactive and immersive digital experiences, and have worked with
+        various technologies including MERN stack, TypeScript, Next.js, Python,
+        Java, Tailwind, Webpack, Babel, D3.js, Three.js, Adobe Suite, Docker and
+        Firebase. Previous experience includes delivering major features during
+        my time at Jostle, as well as researching and developing cutting-edge
+        document processing technologies at Apryse.
       </div>
       <div className={styles.luminaireContainer}>
         <div className={styles.luminaire} />
