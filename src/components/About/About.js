@@ -13,9 +13,9 @@ const About = () => {
         interactive and immersive digital experiences, and have worked with
         various technologies including MERN stack, TypeScript, Next.js, Python,
         Java, Tailwind, Webpack, Babel, D3.js, Three.js, Adobe Suite, Docker and
-        Firebase. Previous experience includes delivering major features during
-        my time at Jostle, as well as researching and developing cutting-edge
-        document processing technologies at Apryse.
+        Firebase. Previous experience includes delivering major features at
+        Jostle, as well as researching and developing cutting-edge document
+        processing technologies at Apryse.
       </div>
       <div className={styles.luminaireContainer}>
         <div className={styles.luminaire} />
