@@ -74,7 +74,7 @@
 
 .component {
   position: relative;
-  margin-top: 100vh;
+  top: 100vh;
 }
 
 .subtitle {
