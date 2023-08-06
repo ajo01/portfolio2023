@@ -59,7 +59,7 @@ function App() {
           <Globe
             ref={globeEl}
             height={window.innerHeight * 0.8 || 600}
-            width={window.innerWidth || 1300}
+            width={window.innerWidth || 1800}
             atmosphereAltitude={0.3}
             pathsData={gData}
             pathColor={colorScheme}
