@@ -1,8 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 
-const Nav = () => {
+const Nav = ({ navRef }) => {
   const detachNav = useSelector((state) => state.ui.detachNav);
   const navDivStyles = {
     background: "black",
@@ -18,14 +17,14 @@ const Nav = () => {
   );
 
   return (
-    <motion.div
+    <div
       className="nav"
-      animate={
+      style={
         detachNav
           ? { position: "fixed", top: 0, background: "black" }
           : { position: "absolute", top: "80%" }
       }
-      transition={{ duration: 0.8, ease: "easeInOut" }}
+      ref={navRef}
     >
       <div
         className="navDivContainer"
@@ -36,7 +35,7 @@ const Nav = () => {
         <NavDiv id="projects" text="Projects" />
         <NavDiv id="contact" text="Contact" />
       </div>
-    </motion.div>
+    </div>
   );
 };
 
