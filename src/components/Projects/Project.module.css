@@ -1,6 +1,6 @@
 .project {
   width: 100%;
-  height: 300px;
+  height: 260px;
   display: flex;
   position: relative;
 }
@@ -25,12 +25,34 @@
   overflow: hidden;
 }
 
-.projectList > :nth-child(1) {
-  height: 300px;
-}
-
 .img {
   height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .projectsContainer {
+    padding-bottom: 200px;
+  }
+  .project {
+    display: block;
+    height: 800px;
+  }
+
+  .img {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+
+  .info {
+    height: 400px;
+    top: 400px;
+    position: relative;
+    width: 100%;
+  }
 }
 
 .center {

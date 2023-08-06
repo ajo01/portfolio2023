@@ -333,3 +333,33 @@ body {
 .glowingBtn:hover:after {
   opacity: 1;
 }
+
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 100%;
+    min-width: none;
+    font-size: 20px;
+    display: block;
+  }
+
+  .leftBox {
+    width: 100%;
+    margin: auto;
+  }
+
+  .rightBox {
+    display: none;
+  }
+
+  .inputContainer {
+    display: block;
+  }
+
+  .emailInput {
+    margin-left: 0;
+  }
+
+  input {
+    width: 100%;
+  }
+}
