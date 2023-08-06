@@ -1,6 +1,6 @@
 :root {
   --blue: #006db0;
-  --glow-color: hsl(197, 100%, 69%);
+  --glow-color: hsl(201, 100%, 76%);
 }
 
 body {
@@ -16,4 +16,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
 }

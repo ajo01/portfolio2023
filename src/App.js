@@ -3,6 +3,7 @@ import "./App.css";
 import Globe from "react-globe.gl";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   const globeEl = useRef();
@@ -52,6 +53,7 @@ function App() {
 
   return (
     <div className="App">
+      <div id="home"></div>
       <div className="home-container">
         <div className="globe-container">
           <Globe
@@ -105,6 +107,7 @@ function App() {
       </div>
       <div className="component">
         <About />
+        <Projects />
         <Contact />
       </div>
     </div>

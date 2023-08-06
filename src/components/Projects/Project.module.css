@@ -1,0 +1,26 @@
+.project {
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+.info {
+  display: block;
+  padding: 40px;
+  font-size: 14px;
+}
+
+.projectsContainer {
+  padding: 200px 0 100px 0;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.projectList > :nth-child(1) {
+  height: 300px;
+}
+
+.img {
+  height: 100%;
+}

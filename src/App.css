@@ -90,3 +90,10 @@
   line-height: 30px;
   letter-spacing: 2px;
 }
+
+.container {
+  padding: 200px;
+  color: white;
+  letter-spacing: 2px;
+  line-height: 32px;
+}

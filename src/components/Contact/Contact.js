@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
+
 const Contact = () => {
   const form = useRef();
   const [submitVisible, setSubmitVisible] = useState(false);
@@ -38,20 +38,20 @@ const Contact = () => {
   };
 
   return (
-    <div className={styles.contact}>
+    <div className="container">
       <div id="contact" className={styles.ref}></div>
       <div className="subtitle"> Contact</div>
       <div className="component-text">
         Have a question or want to work together? Get in touch!
       </div>
 
-      <div class={styles.night}>
-        <div class={styles.shooting_star} />
-        <div class={styles.shooting_star} />
+      <div className={styles.night}>
+        <div className={styles.shooting_star} />
+        <div className={styles.shooting_star} />
         <div class={styles.shooting_star} />
       </div>
 
-      <div className={styles.form}>
+      <div className={styles.form} ref={form}>
         <div className={styles.leftBox}>
           <div className={styles.inputContainer}>
             <input
