@@ -18,11 +18,6 @@
   letter-spacing: 2px;
   line-height: 32px;
   position: relative;
-  background: radial-gradient(
-    #1b2735d0 0%,
-    #090a0f 30%,
-    rgba(255, 255, 255, 0) 70%
-  );
   overflow: hidden;
 }
 
