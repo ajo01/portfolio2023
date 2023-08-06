@@ -12,7 +12,7 @@ const Contact = () => {
 
     setTimeout(() => {
       setSubmitVisible(false);
-    }, 3000);
+    }, 5000);
   };
 
   const sendEmail = (e) => {
@@ -48,10 +48,10 @@ const Contact = () => {
       <div className={styles.night}>
         <div className={styles.shooting_star} />
         <div className={styles.shooting_star} />
-        <div class={styles.shooting_star} />
+        <div className={styles.shooting_star} />
       </div>
 
-      <div className={styles.form} ref={form}>
+      <form className={styles.form} ref={form}>
         <div className={styles.leftBox}>
           <div className={styles.inputContainer}>
             <input
@@ -108,7 +108,7 @@ const Contact = () => {
             <div>British Columbia, Canada</div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

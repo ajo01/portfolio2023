@@ -34,6 +34,11 @@
   text-align: left;
 }
 
+.submitMsg {
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
 input {
   padding: 8px 18px;
   box-sizing: border-box;

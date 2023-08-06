@@ -1,3 +1,6 @@
+reminders:
+have to restart server when changing .env variables
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
