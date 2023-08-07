@@ -27,7 +27,7 @@ const Projects = () => {
     {
       name: "CourseGPT",
       description:
-        "An educational chat interface for students to ask questions related to course content and be provided with accurate and in-depth answers through OpenAI’s custom GPT–4 models. Features user customizable machine learning models, sentiment analytics visualization dashboard, global search, hotkeys, google auth integration, profile customization, and protection against prompt injections",
+        "An educational chat interface for students to ask questions related to course content and be provided with accurate and in-depth answers through OpenAI’s custom GPT–4 models",
       src: gpt,
       //   link: "https://course-gpt.herokuapp.com/",
     },
@@ -42,7 +42,7 @@ const Projects = () => {
     {
       name: "Web Cosedit",
       description:
-        "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types. Capable of stream manipulation, embedded image extraction, editing document security settings, real-time PDF preview, etc. Highly scalable and works with thousand-paged documents",
+        "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types. Highly scalable and works with thousand-paged documents",
       src: cosedit,
       link: "https://cosedit.com/",
     },
@@ -51,9 +51,7 @@ const Projects = () => {
   return (
     <div className={styles.projectsContainer}>
       <div id="projects" className={styles.ref}></div>
-      <div className="subtitle" style={{ paddingLeft: 200, paddingBottom: 50 }}>
-        Projects
-      </div>
+      <div className={styles.subtitle}>Projects</div>
       <div className={styles.center}>
         <div className={styles.star} />
         <div className={styles.star} />

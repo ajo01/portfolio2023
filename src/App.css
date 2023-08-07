@@ -107,3 +107,9 @@
 a {
   color: #8bd5ff;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 5vw;
+  }
+}

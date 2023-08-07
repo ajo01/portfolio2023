@@ -51,7 +51,7 @@ const GlobePage = () => {
   const Msg = () => (
     <div className={styles.msg}>
       Try rotating the globe or zooming in and out by dragging/zooming with the
-      mouse.
+      mouse
     </div>
   );
 

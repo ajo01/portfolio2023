@@ -50,3 +50,10 @@
   transform: translateX(-100px);
   opacity: 1;
 }
+
+@media screen and (max-width: 1000px) {
+  .about {
+    padding: 150px 5vw;
+    color: white;
+  }
+}
