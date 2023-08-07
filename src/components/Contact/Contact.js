@@ -5,6 +5,11 @@ import styles from "./Contact.module.css";
 const Contact = () => {
   const form = useRef();
   const [submitVisible, setSubmitVisible] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const handleInputChange = () => {
+    setIsFormValid(form.current.checkValidity());
+  };
 
   const handleSubmitClick = (e) => {
     sendEmail(e);
@@ -35,6 +40,7 @@ const Contact = () => {
       );
 
     form.current.reset();
+    setIsFormValid(false);
   };
 
   return (
@@ -51,13 +57,14 @@ const Contact = () => {
         <div className={styles.shooting_star} />
       </div>
 
-      <form className={styles.form} ref={form}>
+      <form className={styles.form} ref={form} onChange={handleInputChange}>
         <div className={styles.leftBox}>
           <div className={styles.inputContainer}>
             <input
               className={styles.nameInput}
               type="text"
               required
+              minLength={1}
               placeholder="Full Name"
               name="from_name"
             />
@@ -73,6 +80,7 @@ const Contact = () => {
 
           <textarea
             id={styles.msg}
+            minLength={1}
             placeholder="Type your message here"
             name="message"
             required
@@ -81,6 +89,8 @@ const Contact = () => {
             <button
               className={styles.glowingBtn}
               onClick={(e) => handleSubmitClick(e)}
+              disabled={!isFormValid}
+              style={isFormValid ? null : { cursor: "not-allowed" }}
             >
               <span className={styles.glowingTxt}>Submit</span>
             </button>
