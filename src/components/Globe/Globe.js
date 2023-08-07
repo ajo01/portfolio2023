@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
+import styles from "./Globe.module.css";
 
 const GlobePage = () => {
   const colorScheme = () => ["#006db0", "white"];
@@ -46,6 +47,14 @@ const GlobePage = () => {
     globe.controls().autoRotate = true;
     globe.controls().autoRotateSpeed = 0.35;
   }, []);
+
+  const Msg = () => (
+    <div className={styles.msg}>
+      Try rotating the globe or zooming in and out by dragging/zooming with the
+      mouse.
+    </div>
+  );
+
   return (
     <div className="home-container">
       <div className="globe-container">
@@ -77,6 +86,7 @@ const GlobePage = () => {
           Software Engineer | Web Developer | Data Visualization
         </div>
       </div>
+      <Msg />
     </div>
   );
 };

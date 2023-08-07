@@ -103,6 +103,18 @@
   animation: orbit5 60s linear infinite;
 }
 
+.star:nth-child(6) {
+  animation: orbit6 60s linear infinite;
+}
+
+.star:nth-child(7) {
+  animation: orbit7 60s linear infinite;
+}
+
+.star:nth-child(8) {
+  animation: orbit8 60s linear infinite;
+}
+
 @keyframes orbit {
   from {
     transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
@@ -115,11 +127,11 @@
 
 @keyframes orbit2 {
   from {
-    transform: translate(-50%, -50%) rotate(30deg) translateX(200px)
+    transform: translate(-50%, -50%) rotate(270deg) translateX(200px)
       rotate(0deg);
   }
   to {
-    transform: translate(-50%, -50%) rotate(390deg) translateX(200px)
+    transform: translate(-50%, -50%) rotate(630deg) translateX(200px)
       rotate(-360deg);
   }
 }
@@ -153,6 +165,39 @@
   }
   to {
     transform: translate(-50%, -50%) rotate(420deg) translateX(600px)
+      rotate(-360deg);
+  }
+}
+
+@keyframes orbit6 {
+  from {
+    transform: translate(-50%, -50%) rotate(-90deg) translateX(700px)
+      rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(270deg) translateX(700px)
+      rotate(-360deg);
+  }
+}
+
+@keyframes orbit7 {
+  from {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(400px)
+      rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(540deg) translateX(400px)
+      rotate(-360deg);
+  }
+}
+
+@keyframes orbit8 {
+  from {
+    transform: translate(-50%, -50%) rotate(-45deg) translateX(500px)
+      rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(315deg) translateX(500px)
       rotate(-360deg);
   }
 }

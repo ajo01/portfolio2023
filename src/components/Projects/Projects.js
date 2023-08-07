@@ -60,6 +60,9 @@ const Projects = () => {
         <div className={styles.star} />
         <div className={styles.star} />
         <div className={styles.star} />
+        <div className={styles.star} />
+        <div className={styles.star} />
+        <div className={styles.star} />
       </div>
       <div className={styles.projectList}>
         {projectList.map((project, i) => (
