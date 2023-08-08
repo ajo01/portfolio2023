@@ -7,11 +7,11 @@ import Nav from "./components/Nav/Nav";
 import GlobePage from "./components/Globe/Globe";
 import { useDispatch } from "react-redux";
 import { setDetachNav } from "./redux/uiSlice";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const scrollableDivRef = useRef(null);
   const dispatch = useDispatch();
-  const [tab, setTab] = useState("HOME");
 
   const handleScroll = async () => {
     if (scrollableDivRef.current) {
@@ -20,11 +20,16 @@ function App() {
     }
   };
 
-  const renderPage = () => {
-    if (tab === "HOME") {
-      return <GlobePage setTab={setTab} />;
-    }
+  const Home = () => {
     return (
+      <div className="App">
+        <GlobePage />
+      </div>
+    );
+  };
+
+  const AboutPage = () => (
+    <div className="App" ref={scrollableDivRef} onScroll={handleScroll}>
       <div className="other-page">
         <div className="component">
           <About />
@@ -32,15 +37,16 @@ function App() {
           <Contact />
         </div>
 
-        <Nav setTab={setTab} />
+        <Nav />
       </div>
-    );
-  };
+    </div>
+  );
 
   return (
-    <div className="App" ref={scrollableDivRef} onScroll={handleScroll}>
-      {renderPage()}
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
   );
 }
 
