@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -7,38 +7,46 @@ import Nav from "./components/Nav/Nav";
 import GlobePage from "./components/Globe/Globe";
 import { useDispatch } from "react-redux";
 import { setDetachNav } from "./redux/uiSlice";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const scrollableDivRef = useRef(null);
-  const navRef = useRef(null);
   const dispatch = useDispatch();
-  const [initialNavPos, setInitialNavPos] = useState(0);
-
-  useEffect(() => {
-    if (navRef.current) {
-      setInitialNavPos(navRef.current.offsetTop);
-    }
-  }, []);
 
   const handleScroll = async () => {
     if (scrollableDivRef.current) {
       const scrollTop = scrollableDivRef.current.scrollTop;
-      // console.log("scrollTop", scrollTop, "sticky", sticky);
-      await dispatch(setDetachNav(scrollTop >= initialNavPos));
+      await dispatch(setDetachNav(scrollTop >= 0));
     }
   };
 
-  return (
-    <div className="App" ref={scrollableDivRef} onScroll={handleScroll}>
-      <div id="home"></div>
-      <GlobePage />
-      <div className="component">
-        <About />
-        <Projects />
-        <Contact />
+  const Home = () => {
+    return (
+      <div className="App">
+        <GlobePage />
       </div>
-      <Nav navRef={navRef} />
+    );
+  };
+
+  const AboutPage = () => (
+    <div className="App" ref={scrollableDivRef} onScroll={handleScroll}>
+      <div className="other-page">
+        <div className="component">
+          <About />
+          <Projects />
+          <Contact />
+        </div>
+
+        <Nav />
+      </div>
     </div>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
   );
 }
 
