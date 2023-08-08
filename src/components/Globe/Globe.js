@@ -8,7 +8,7 @@ const GlobePage = ({ setTab }) => {
   const canvasHeight = window.innerHeight * 0.8;
   const globeEl = useRef();
 
-  const N_PATHS = 10;
+  const N_PATHS = 15;
   const MAX_POINTS_PER_LINE = 10000;
   const MAX_STEP_DEG = 1;
   const MAX_STEP_ALT = 0.015;
@@ -45,7 +45,7 @@ const GlobePage = ({ setTab }) => {
     const globe = globeEl.current;
 
     globe.controls().autoRotate = true;
-    globe.controls().autoRotateSpeed = 0.35;
+    globe.controls().autoRotateSpeed = 0.3;
   }, []);
 
   const Msg = () => (
