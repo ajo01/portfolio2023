@@ -18,7 +18,7 @@
   padding: 1em 2em;
   border: 0.15em solid var(--pale-glow-color);
   border-radius: 0.45em;
-  background: none;
+  background: rgba(0, 0, 0, 0.267);
   perspective: 2em;
   font-size: 1em;
   font-weight: 900;
@@ -56,7 +56,7 @@
   opacity: 0;
   z-index: -1;
   background-color: var(--pale-glow-color);
-  box-shadow: 0 0 2em 0.2em var(--pale-glow-color);
+  box-shadow: 0 0 0.6em 0.1em var(--pale-glow-color);
   transition: opacity 100ms linear;
 }
 
