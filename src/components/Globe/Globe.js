@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
 import styles from "./Globe.module.css";
 
-const GlobePage = () => {
+const GlobePage = ({ setTab }) => {
   const colorScheme = () => ["#006db0", "white"];
   const canvasHeight = window.innerHeight * 0.8;
   const globeEl = useRef();
@@ -85,6 +85,9 @@ const GlobePage = () => {
         <div className="sub">
           Software Engineer | Web Developer | Data Visualization
         </div>
+        <button className={styles.glowingBtn} onClick={() => setTab("about")}>
+          <span className={styles.glowingTxt}>START</span>
+        </button>
       </div>
       <Msg />
     </div>
