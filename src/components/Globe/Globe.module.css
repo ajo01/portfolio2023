@@ -15,12 +15,12 @@
   position: relative;
   color: rgb(224, 245, 255);
   cursor: pointer;
-  padding: 1em 2em;
+  padding: 1.2em 2.4em;
   border: 0.15em solid var(--pale-glow-color);
   border-radius: 0.45em;
-  background: rgba(0, 0, 0, 0.267);
+  background: rgba(0, 25, 55, 0.253);
   perspective: 2em;
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 900;
   letter-spacing: 0.8em;
   margin-top: 40px;
