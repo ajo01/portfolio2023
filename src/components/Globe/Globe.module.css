@@ -15,12 +15,12 @@
   position: relative;
   color: rgb(224, 245, 255);
   cursor: pointer;
-  padding: 1em 2em;
+  padding: 4.5em 2em;
   border: 0.15em solid var(--pale-glow-color);
-  border-radius: 0.45em;
-  background: rgba(0, 0, 0, 0.267);
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.326);
   perspective: 2em;
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 900;
   letter-spacing: 0.8em;
   margin-top: 40px;
@@ -43,7 +43,6 @@
     0 0 0.45em var(--pale-glow-color);
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
     0 0 0.45em var(--pale-glow-color);
-  animation: text-flicker 3s linear infinite;
 }
 
 .glowingBtn::after {
@@ -53,6 +52,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 100%;
   opacity: 0;
   z-index: -1;
   background-color: var(--pale-glow-color);
