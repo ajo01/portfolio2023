@@ -195,6 +195,7 @@ const Aurora = () => {
 
   useEffect(() => {
     setup();
+    // eslint-disable-next-line
   }, []);
 
   return (
