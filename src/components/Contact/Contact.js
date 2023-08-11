@@ -17,9 +17,9 @@ const Contact = () => {
     sendEmail(e);
     setSubmitVisible(true);
 
-    // setTimeout(() => {
-    //   setSubmitVisible(false);
-    // }, 5000);
+    setTimeout(() => {
+      setSubmitVisible(false);
+    }, 5000);
   };
 
   const sendEmail = (e) => {
