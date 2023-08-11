@@ -8,6 +8,7 @@ import GlobePage from "./components/Globe/Globe";
 import { useDispatch } from "react-redux";
 import { setDetachNav } from "./redux/uiSlice";
 import { Route, Routes } from "react-router-dom";
+import Aurora from "./components/Aurora/Aurora";
 
 function App() {
   const scrollableDivRef = useRef(null);
@@ -33,6 +34,7 @@ function App() {
       <div className="other-page">
         <div className="component">
           <About />
+          <Aurora />
           <Projects />
           <Contact />
         </div>
