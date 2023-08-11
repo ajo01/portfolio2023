@@ -52,16 +52,6 @@ const Projects = () => {
     <div className={styles.projectsContainer}>
       <div id="projects" className={styles.ref}></div>
       <div className={styles.subtitle}>Projects</div>
-      <div className={styles.center}>
-        <div className={styles.star} />
-        <div className={styles.star} />
-        <div className={styles.star} />
-        <div className={styles.star} />
-        <div className={styles.star} />
-        <div className={styles.star} />
-        <div className={styles.star} />
-        <div className={styles.star} />
-      </div>
       <div className={styles.projectList}>
         {projectList.map((project, i) => (
           <Project
