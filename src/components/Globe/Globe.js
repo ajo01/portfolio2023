@@ -4,6 +4,7 @@ import Globe from "react-globe.gl";
 import styles from "./Globe.module.css";
 
 import { useNavigate } from "react-router-dom";
+import GlowButton from "../GlowButton/GlowButton";
 
 const GlobePage = () => {
   const colorScheme = () => ["#006db0", "white"];
@@ -89,12 +90,7 @@ const GlobePage = () => {
         <div className="sub">
           Software Engineer | Web Developer | Data Visualization
         </div>
-        <button
-          className={styles.glowingBtn}
-          onClick={() => navigate("/about")}
-        >
-          <span className={styles.glowingTxt}>START</span>
-        </button>
+        <GlowButton handleClick={navigate("/about")} text="START" />
       </div>
       <Msg />
     </div>
