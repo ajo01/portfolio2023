@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
+import GlowButton from "../GlowButton/GlowButton";
 
 const Contact = () => {
   const form = useRef();
@@ -12,6 +13,7 @@ const Contact = () => {
   };
 
   const handleSubmitClick = (e) => {
+    e.preventDefault();
     sendEmail(e);
     setSubmitVisible(true);
 
@@ -44,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container" style={{ paddingBottom: 200 }}>
+    <div className="container" style={{ paddingBottom: 20 }}>
       <div id="contact" className={styles.ref}></div>
       <div className="subtitle"> Contact</div>
       <div className="component-text">
@@ -86,16 +88,16 @@ const Contact = () => {
             required
           />
           <div id={styles.submit}>
-            <button
-              className={styles.glowingBtn}
-              onClick={(e) => handleSubmitClick(e)}
-              disabled={!isFormValid}
-              style={isFormValid ? null : { cursor: "not-allowed" }}
-            >
-              <span className={styles.glowingTxt}>Submit</span>
-            </button>
+            <GlowButton
+              handleClick={handleSubmitClick}
+              text="Submit"
+              disabledStyle={{ cursor: "not-allowed" }}
+              isDisabled={!isFormValid}
+            />
+            {submitVisible && (
+              <div className={styles.submitMsg}>Submitted!</div>
+            )}
           </div>
-          {submitVisible && <div className={styles.submitMsg}>Submitted!</div>}
         </div>
 
         <div className={styles.rightBox}>
