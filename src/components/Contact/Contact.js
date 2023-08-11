@@ -13,12 +13,13 @@ const Contact = () => {
   };
 
   const handleSubmitClick = (e) => {
+    e.preventDefault();
     sendEmail(e);
     setSubmitVisible(true);
 
-    setTimeout(() => {
-      setSubmitVisible(false);
-    }, 5000);
+    // setTimeout(() => {
+    //   setSubmitVisible(false);
+    // }, 5000);
   };
 
   const sendEmail = (e) => {
@@ -90,11 +91,13 @@ const Contact = () => {
             <GlowButton
               handleClick={handleSubmitClick}
               text="Submit"
-              style={{ cursor: "not-allowed" }}
+              disabledStyle={{ cursor: "not-allowed" }}
               isDisabled={!isFormValid}
             />
+            {submitVisible && (
+              <div className={styles.submitMsg}>Submitted!</div>
+            )}
           </div>
-          {submitVisible && <div className={styles.submitMsg}>Submitted!</div>}
         </div>
 
         <div className={styles.rightBox}>

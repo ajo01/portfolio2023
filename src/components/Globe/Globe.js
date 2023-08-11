@@ -90,7 +90,11 @@ const GlobePage = () => {
         <div className="sub">
           Software Engineer | Web Developer | Data Visualization
         </div>
-        <GlowButton handleClick={navigate("/about")} text="START" />
+        <GlowButton
+          handleClick={() => navigate("/about")}
+          text="START"
+          style={{ marginTop: 40 }}
+        />
       </div>
       <Msg />
     </div>

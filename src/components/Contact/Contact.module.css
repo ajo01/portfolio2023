@@ -37,11 +37,14 @@
 #submit {
   margin-top: 30px;
   text-align: left;
+  display: flex;
 }
 
 .submitMsg {
   margin-top: 20px;
-  letter-spacing: 2px;
+  margin-left: 40px;
+  letter-spacing: 4px;
+  color: hsl(198, 100%, 76%);
 }
 
 input {
