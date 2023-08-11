@@ -34,9 +34,9 @@ function App() {
       <div className="other-page">
         <div className="component">
           <About />
-          <Aurora />
           <Projects />
           <Contact />
+          <Aurora />
         </div>
 
         <Nav />

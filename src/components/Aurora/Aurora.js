@@ -146,11 +146,8 @@ const Aurora = () => {
       b: document.createElement("canvas"),
     };
     canvas.b.style = `
-		position: fixed;
-		top: 0;
-		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 800px;
 	`;
     container.appendChild(canvas.b);
     ctx = {
@@ -179,7 +176,7 @@ const Aurora = () => {
 
   function render() {
     ctx.b.save();
-    ctx.b.filter = "blur(12px)";
+    ctx.b.filter = "blur(15px)";
     ctx.a.globalCompositeOperation = "lighter";
     ctx.b.drawImage(canvas.a, 0, 0);
     ctx.b.restore();
@@ -198,9 +195,13 @@ const Aurora = () => {
 
   useEffect(() => {
     setup();
-  });
+  }, []);
 
-  return <div class="content content--canvas"></div>;
+  return (
+    <div style={{ position: "relative" }}>
+      <div class="content content--canvas" />
+    </div>
+  );
 };
 
 export default Aurora;
