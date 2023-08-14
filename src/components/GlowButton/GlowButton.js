@@ -7,6 +7,7 @@ const GlowButton = ({
   disabledStyle,
   text,
   style,
+  isBlue,
 }) => {
   const getStyles = () => {
     if (isDisabled) {
@@ -17,12 +18,14 @@ const GlowButton = ({
 
   return (
     <button
-      className={styles.glowingBtn}
+      className={isBlue ? styles.glowingBtnBlue : styles.glowingBtn}
       onClick={(e) => handleClick(e)}
       disabled={isDisabled}
       style={getStyles()}
     >
-      <span className={styles.glowingTxt}>{text}</span>
+      <span className={isBlue ? styles.glowingTxtBlue : styles.glowingTxt}>
+        {text}
+      </span>
     </button>
   );
 };

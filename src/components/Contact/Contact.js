@@ -93,6 +93,7 @@ const Contact = () => {
               text="Submit"
               disabledStyle={{ cursor: "not-allowed" }}
               isDisabled={!isFormValid}
+              isBlue={true}
             />
             {submitVisible && (
               <div className={styles.submitMsg}>Submitted!</div>
