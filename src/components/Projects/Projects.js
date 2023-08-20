@@ -29,7 +29,7 @@ const Projects = () => {
       description:
         "An educational chat interface for students to ask questions related to course content and be provided with accurate and in-depth answers through OpenAI’s custom GPT–4 models",
       src: gpt,
-      //   link: "https://course-gpt.herokuapp.com/",
+      link: "https://course-gpt.herokuapp.com/",
     },
     {
       name: "CanvasToPDF",
