@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
@@ -13,11 +13,19 @@ import Hero from "./components/Hero/Hero";
 function App() {
   const scrollableDivRef = useRef(null);
   const dispatch = useDispatch();
+  const navRef = useRef(null);
+  const [initialNavPos, setInitialNavPos] = useState(0);
+
+  useEffect(() => {
+    if (navRef.current) {
+      setInitialNavPos(navRef.current.offsetTop);
+    }
+  }, []);
 
   const handleScroll = async () => {
     if (scrollableDivRef.current) {
       const scrollTop = scrollableDivRef.current.scrollTop;
-      await dispatch(setDetachNav(scrollTop >= 0));
+      await dispatch(setDetachNav(scrollTop >= initialNavPos));
     }
   };
 
@@ -25,6 +33,12 @@ function App() {
     return (
       <div className="App">
         <Hero />
+        <div className="component">
+          <About />
+          <Projects />
+          <Contact />
+        </div>
+        <Nav navRef={navRef} />
       </div>
     );
   };
@@ -38,8 +52,6 @@ function App() {
           <Contact />
           <Aurora />
         </div>
-
-        <Nav />
       </div>
     </div>
   );
@@ -47,7 +59,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<AboutPage />} />
     </Routes>
   );
 }

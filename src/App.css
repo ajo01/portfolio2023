@@ -62,44 +62,9 @@
   position: relative;
 }
 
-.nav {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  width: 100%;
-  color: white;
-  background: black;
-}
-
-.navDivContainer {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
-}
-
-.navDivContainer > div {
-  width: 100%;
-  height: 100%;
-  transition: 0.4s;
-  padding: 30px 30px;
-  margin: auto;
-  text-align: center;
-  font-size: 18px;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.navDivContainer > div:hover {
-  background-color: rgba(255, 255, 255, 0.066);
-  text-shadow: none;
-  box-shadow: #375f89 0px 30px 60px -12px, #547ca1 0px 18px 36px -18px;
-}
-
 .component {
   position: absolute;
-  top: 0;
+  top: 100vh;
 }
 
 .subtitle {
