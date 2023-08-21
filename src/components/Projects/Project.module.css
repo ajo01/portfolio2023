@@ -21,14 +21,10 @@
 .project {
   width: 100%;
   height: 400px;
-  display: flex;
+  display: block;
   position: relative;
   transition: 0.4s;
-  margin-bottom: 200px;
-}
-
-.project:nth-child(4) .img {
-  min-width: 50%;
+  margin-bottom: 400px;
 }
 
 .ref {
@@ -36,17 +32,20 @@
   top: 200px;
 }
 
+.name {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+}
+
 .info {
-  display: block;
-  padding: 40px;
+  padding: 40px 40px 40px 0;
   font-size: 1rem;
-  width: 50%;
+  color: rgb(196, 196, 196);
 }
 
 .img {
-  height: 100%;
-  width: 50%;
-  object-fit: cover;
+  max-width: 45%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -80,148 +79,5 @@
     margin: auto;
     padding: 0;
     padding-top: 16px;
-  }
-}
-
-.center {
-  width: 60%;
-  aspect-ratio: 1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border-radius: 50%;
-}
-
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: white;
-  box-shadow: 0 0 2px 1px #fff, 0 0 4px 2px rgb(0, 170, 255);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-}
-
-.star:nth-child(1) {
-  animation: orbit 60s linear infinite;
-}
-
-.star:nth-child(2) {
-  animation: orbit2 60s linear infinite;
-}
-
-.star:nth-child(3) {
-  animation: orbit3 60s linear infinite;
-}
-
-.star:nth-child(4) {
-  animation: orbit4 60s linear infinite;
-}
-
-.star:nth-child(5) {
-  animation: orbit5 60s linear infinite;
-}
-
-.star:nth-child(6) {
-  animation: orbit6 60s linear infinite;
-}
-
-.star:nth-child(7) {
-  animation: orbit7 60s linear infinite;
-}
-
-.star:nth-child(8) {
-  animation: orbit8 60s linear infinite;
-}
-
-@keyframes orbit {
-  from {
-    transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(100px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit2 {
-  from {
-    transform: translate(-50%, -50%) rotate(270deg) translateX(200px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(630deg) translateX(200px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit3 {
-  from {
-    transform: translate(-50%, -50%) rotate(120deg) translateX(300px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(480deg) translateX(300px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit4 {
-  from {
-    transform: translate(-50%, -50%) rotate(90deg) translateX(500px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(450deg) translateX(500px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit5 {
-  from {
-    transform: translate(-50%, -50%) rotate(60deg) translateX(600px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(420deg) translateX(600px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit6 {
-  from {
-    transform: translate(-50%, -50%) rotate(-90deg) translateX(700px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(270deg) translateX(700px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit7 {
-  from {
-    transform: translate(-50%, -50%) rotate(180deg) translateX(400px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(540deg) translateX(400px)
-      rotate(-360deg);
-  }
-}
-
-@keyframes orbit8 {
-  from {
-    transform: translate(-50%, -50%) rotate(-45deg) translateX(500px)
-      rotate(0deg);
-  }
-  to {
-    transform: translate(-50%, -50%) rotate(315deg) translateX(500px)
-      rotate(-360deg);
   }
 }

@@ -11,38 +11,33 @@ import cosedit from "../../assets/cosedit.png";
 const Projects = () => {
   const projectList = [
     {
-      name: "Apryse Landing Page",
-      description:
-        "Engineered Apryse's new landing page for their 2023 rebranding event",
+      name: "Apryse",
+      description: "Corporate Landing Page",
       src: apryse,
       link: "https://apryse.com/",
     },
     {
       name: "WebViewer",
-      description:
-        "Developed customized PDF digital signatures feature for the company's flagship product, Webviewer, an industry-leading document processing SDK",
+      description: "Corporate Flagship Product",
       src: web,
       link: "https://showcase.apryse.com/?share=facebook",
     },
     {
       name: "CourseGPT",
-      description:
-        "An educational chat interface for students to ask questions related to course content and be provided with accurate and in-depth answers through OpenAI’s custom GPT–4 models",
+      description: "Educational Chat Interface",
       src: gpt,
       link: "https://course-gpt.herokuapp.com/",
     },
     {
       name: "CanvasToPDF",
-      description:
-        "An npm library for exporting vector-quality PDFs using the Canvas API",
+      description: "Npm Library",
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
     },
 
     {
       name: "Web Cosedit",
-      description:
-        "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types. Highly scalable and works with thousand-paged documents",
+      description: "PDF editor",
       src: cosedit,
       link: "https://cosedit.com/",
     },
