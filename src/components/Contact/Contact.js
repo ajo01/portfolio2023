@@ -108,7 +108,6 @@ const Contact = () => {
             style={{
               paddingLeft: 0,
               fontSize: 18,
-              textDecoration: "underline",
               color: "#8bd5ff",
             }}
           >
