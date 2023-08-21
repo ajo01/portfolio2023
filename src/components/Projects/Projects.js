@@ -29,17 +29,16 @@ const Projects = () => {
       link: "https://course-gpt.herokuapp.com/",
     },
     {
+      name: "Web Cosedit",
+      description: "Powerful PDF Editor",
+      src: cosedit,
+      link: "https://cosedit.com/",
+    },
+    {
       name: "CanvasToPDF",
       description: "Npm Library",
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
-    },
-
-    {
-      name: "Web Cosedit",
-      description: "PDF editor",
-      src: cosedit,
-      link: "https://cosedit.com/",
     },
   ];
 
