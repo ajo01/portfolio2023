@@ -2,9 +2,9 @@ import React from "react";
 import Project from "./Project";
 
 import styles from "./Project.module.css";
-import gpt from "../../assets/gpt1.gif";
-import apryse from "../../assets/apryse.gif";
-import web from "../../assets/webviewer.gif";
+import gpt from "../../assets/gpt2.png";
+import apryse from "../../assets/apryse1.jpeg";
+import web from "../../assets/webviewer-ui.png";
 import canvas from "../../assets/canvas.png";
 import cosedit from "../../assets/cosedit.png";
 
