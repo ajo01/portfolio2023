@@ -23,12 +23,6 @@
   }
 }
 
-.globe-container {
-  position: absolute;
-  left: 0;
-  width: 100%;
-}
-
 .main-bg {
   /* background-color: rgba(46, 46, 93, 0.252); */
   background-color: rgba(29, 29, 61, 0.324);
@@ -45,7 +39,7 @@
   /* color: black; */
   color: rgba(228, 229, 247, 0.879);
 
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
