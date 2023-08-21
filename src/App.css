@@ -36,10 +36,9 @@
 .text-container {
   position: absolute;
   width: 100%;
-  /* color: black; */
   color: rgba(228, 229, 247, 0.879);
 
-  top: 35%;
+  top: 32%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -56,6 +55,7 @@
   line-height: 50px;
   margin-top: 16px;
   text-shadow: 0px 0px 20px #fff, 0px 0px 20px #006be6;
+  color: rgb(188, 228, 255);
 }
 
 .other-page {
