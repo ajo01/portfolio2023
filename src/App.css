@@ -31,7 +31,7 @@
 
 .main-bg {
   /* background-color: rgba(46, 46, 93, 0.252); */
-  background-color: rgba(46, 46, 93, 0.252);
+  background-color: rgba(29, 29, 61, 0.324);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -54,14 +54,14 @@
 
 .title {
   font-size: 75px;
-  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #00a5e6;
+  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #006be6;
 }
 
 .sub {
   font-size: 18px;
   line-height: 50px;
   margin-top: 16px;
-  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #00a5e6;
+  text-shadow: 0px 0px 20px #fff, 0px 0px 20px #006be6;
 }
 
 .other-page {
