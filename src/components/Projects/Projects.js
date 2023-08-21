@@ -30,7 +30,7 @@ const Projects = () => {
     },
     {
       name: "Web Cosedit",
-      description: "Powerful PDF Editor",
+      description: "Object-Level PDF Editor",
       src: cosedit,
       link: "https://cosedit.com/",
     },
