@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import styles from "./Nav.module.css";
 
 import { useSelector } from "react-redux";
 const Nav = () => {
@@ -22,9 +23,9 @@ const Nav = () => {
   );
 
   return (
-    <div className="nav">
+    <div className={styles.nav}>
       <div
-        className="navDivContainer"
+        className={styles.navDivContainer}
         style={detachNav ? { background: "black" } : null}
       >
         <NavDiv text="Home" onClick={() => navigate("/")} />
