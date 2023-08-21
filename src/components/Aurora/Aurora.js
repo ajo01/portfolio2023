@@ -200,7 +200,7 @@ const Aurora = () => {
 
   return (
     <div style={{ position: "relative" }}>
-      <div class="content content--canvas" />
+      <div className="content content--canvas" />
     </div>
   );
 };

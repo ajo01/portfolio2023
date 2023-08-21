@@ -17,9 +17,9 @@ const About = () => {
         Jostle, as well as researching and developing cutting-edge document
         processing technologies at Apryse.
       </div>
-      <div className={styles.luminaireContainer}>
+      {/* <div className={styles.luminaireContainer}>
         <div className={styles.luminaire} />
-      </div>
+      </div> */}
     </div>
   );
 };

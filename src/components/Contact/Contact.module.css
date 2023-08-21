@@ -88,15 +88,6 @@ input:focus,
   letter-spacing: 2px;
 }
 
-body {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Anton", sans-serif;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (max-width: 1000px) {
   .form {
     width: 100%;

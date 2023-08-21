@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container" style={{ paddingBottom: 20 }}>
+    <div className="container" style={{ paddingBottom: 300 }}>
       <div id="contact" className={styles.ref}></div>
       <div className="subtitle"> Contact</div>
       <div className="component-text">
