@@ -14,7 +14,7 @@ const GlobePage = () => {
   const navigate = useNavigate();
 
   const N_PATHS = 15;
-  const MAX_POINTS_PER_LINE = 10000;
+  const MAX_POINTS_PER_LINE = 20000;
   const MAX_STEP_DEG = 1;
   const MAX_STEP_ALT = 0.015;
 
