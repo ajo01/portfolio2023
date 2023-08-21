@@ -14,10 +14,6 @@
   animation: fadeInAnimation 0.8s ease-in-out forwards;
 }
 
-/* * {
-  outline: 1px solid #f00 !important;
-} */
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
