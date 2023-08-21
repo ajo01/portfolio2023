@@ -1,11 +1,14 @@
 .nav {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  left: 0;
   top: 0;
   width: 100%;
   color: white;
-  background: black;
+  background: rgba(0, 0, 0, 0.873);
+}
+
+.navDiv {
+  background-color: transparent;
 }
 
 .navDivContainer {
@@ -28,7 +31,7 @@
 }
 
 .navDivContainer > div:hover {
-  background-color: rgba(255, 255, 255, 0.066);
+  background-color: rgba(255, 255, 255, 0.025);
   text-shadow: none;
   box-shadow: #375f89 0px 30px 60px -12px, #547ca1 0px 18px 36px -18px;
 }

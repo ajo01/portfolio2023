@@ -5,15 +5,12 @@ import styles from "./Nav.module.css";
 import { useSelector } from "react-redux";
 const Nav = () => {
   const detachNav = useSelector((state) => state.ui.detachNav);
-  const navDivStyles = {
-    background: "black",
-  };
 
   const navigate = useNavigate();
 
   const NavDiv = ({ id, text, onClick }) => (
     <div
-      style={detachNav ? navDivStyles : null}
+      className={styles.navDiv}
       onClick={() => {
         onClick ? onClick() : document.getElementById(id).scrollIntoView();
       }}
@@ -24,10 +21,7 @@ const Nav = () => {
 
   return (
     <div className={styles.nav}>
-      <div
-        className={styles.navDivContainer}
-        style={detachNav ? { background: "black" } : null}
-      >
+      <div className={styles.navDivContainer}>
         <NavDiv text="Home" onClick={() => navigate("/")} />
         <NavDiv id="about" text="About" />
         <NavDiv id="projects" text="Projects" />

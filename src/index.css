@@ -2,6 +2,7 @@
   --blue: #006db0;
   --pale-blue-glow-color: rgb(144, 220, 255);
   --pale-glow-color: rgb(224, 245, 255);
+  --wrapper: rgba(29, 29, 61, 0.324);
 }
 
 body {
