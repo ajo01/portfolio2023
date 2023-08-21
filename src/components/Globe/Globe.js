@@ -61,13 +61,13 @@ const GlobePage = () => {
   );
 
   return (
-    <div className="home-container">
+    <div>
       <div className="globe-container">
         <Globe
           ref={globeEl}
           height={canvasHeight || 600}
           width={window.innerWidth || 1800}
-          atmosphereAltitude={0.3}
+          atmosphereAltitude={0.4}
           pathsData={gData}
           pathColor={colorScheme}
           pathDashLength={0.01}
