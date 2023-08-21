@@ -82,7 +82,9 @@
 }
 
 a {
-  color: #8bd5ff;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .auroraWrapper {
