@@ -5,7 +5,6 @@ import GlowButton from "../GlowButton/GlowButton";
 
 const Contact = () => {
   const form = useRef();
-  const [submitVisible, setSubmitVisible] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
 
   const handleInputChange = () => {
@@ -15,11 +14,6 @@ const Contact = () => {
   const handleSubmitClick = (e) => {
     e.preventDefault();
     sendEmail(e);
-    setSubmitVisible(true);
-
-    setTimeout(() => {
-      setSubmitVisible(false);
-    }, 5000);
   };
 
   const sendEmail = (e) => {
@@ -89,27 +83,6 @@ const Contact = () => {
               required
             />
           </div>
-
-          <div className={styles.rightBox}>
-            <div className={styles.title}>LinkedIn</div>
-            <a
-              href="https://www.linkedin.com/in/amyjo1/"
-              style={{
-                paddingLeft: 0,
-                fontSize: 18,
-                color: "#8bd5ff",
-              }}
-            >
-              Amy Jo
-            </a>
-            <div className={styles.title} style={{ marginTop: 50 }}>
-              Location
-            </div>
-            <div>
-              <div>UBC Vancouver</div>
-              <div>British Columbia, Canada</div>
-            </div>
-          </div>
         </div>
         <div id={styles.submit}>
           <GlowButton
@@ -119,7 +92,6 @@ const Contact = () => {
             isDisabled={!isFormValid}
             isBlue={true}
           />
-          {submitVisible && <div className={styles.submitMsg}>Submitted!</div>}
         </div>
       </form>
     </div>
