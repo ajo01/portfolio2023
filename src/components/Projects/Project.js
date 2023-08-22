@@ -4,7 +4,9 @@ const Project = ({ src, desc, link, index, name }) => {
   return (
     <div className={styles.project}>
       <div className={styles.imgInfo}>
-        <img className={styles.img} src={src} alt="" />
+        <div className={styles.imgContainer}>
+          <img className={styles.img} src={src} alt="" />
+        </div>
         <div className={styles.info}>
           <div className={styles.name}>{name}</div>
 

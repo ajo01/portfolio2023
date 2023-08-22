@@ -21,7 +21,6 @@
 .navDivContainer > div {
   width: 100%;
   height: 100%;
-  transition: 0.4s;
   padding: 30px 30px;
   margin: auto;
   text-align: center;
