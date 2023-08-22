@@ -26,11 +26,9 @@
   text-align: center;
   font-size: 18px;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 .navDivContainer > div:hover {
   text-shadow: none;
-  box-shadow: #375f89 0px 30px 60px -12px, #547ca1 0px 18px 36px -18px;
   color: white;
 }
