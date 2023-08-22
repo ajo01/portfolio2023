@@ -13,7 +13,9 @@ const Contact = () => {
 
   const handleSubmitClick = (e) => {
     e.preventDefault();
-    sendEmail(e);
+    if (isFormValid) {
+      sendEmail(e);
+    }
   };
 
   const sendEmail = (e) => {
