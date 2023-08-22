@@ -20,7 +20,6 @@ const Button = styled.button`
   font-size: 1em;
   font-weight: 900;
   letter-spacing: 0.8em;
-  transition: 0.4s;
   ${({ isdisabled, color }) => getColorStyles(isdisabled, color)};
 
   &::after {

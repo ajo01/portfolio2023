@@ -1,6 +1,6 @@
 const theme = {
   colors: {
-    disabled: "rgb(107, 115, 124)",
+    disabled: "rgb(122, 130, 140)",
   },
 };
 
