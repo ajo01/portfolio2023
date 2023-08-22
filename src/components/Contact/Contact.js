@@ -88,9 +88,8 @@ const Contact = () => {
           <GlowButton
             handleClick={handleSubmitClick}
             text="Submit"
-            disabledStyle={{ cursor: "not-allowed" }}
             isDisabled={!isFormValid}
-            isBlue={true}
+            color="rgb(144, 220, 255)"
           />
         </div>
       </form>
