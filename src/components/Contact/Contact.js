@@ -64,7 +64,7 @@ const Contact = () => {
                 type="text"
                 required
                 minLength={1}
-                placeholder="Full Name"
+                placeholder="Name"
                 name="from_name"
               />
 
