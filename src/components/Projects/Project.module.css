@@ -45,7 +45,7 @@
 .info {
   padding: 20px 40px 40px 0;
   font-size: 1rem;
-  color: rgb(196, 196, 196);
+  color: var(--grayText);
 }
 
 .imgContainer {
