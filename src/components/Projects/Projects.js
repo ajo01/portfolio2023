@@ -7,6 +7,8 @@ import apryse from "../../assets/apryse1.jpeg";
 import web from "../../assets/webviewer-ui.png";
 import canvas from "../../assets/canvas.png";
 import cosedit from "../../assets/cosedit.png";
+import aurora from "../../assets/aurora.png";
+import qr from "../../assets/qr2.png";
 
 const Projects = () => {
   const projectList = [
@@ -35,10 +37,22 @@ const Projects = () => {
       link: "https://cosedit.com/",
     },
     {
+      name: "QR Scanner",
+      description: "Internal Progressive Web App",
+      src: qr,
+      link: "",
+    },
+    {
       name: "CanvasToPDF",
-      description: "Npm Library",
+      description: "Vector Appearances Library",
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
+    },
+    {
+      name: "Aurora",
+      description: "UI Component Library",
+      src: aurora,
+      link: "https://www.npmjs.com/package/@nwplusdev/aurora",
     },
   ];
 
