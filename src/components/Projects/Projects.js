@@ -59,7 +59,7 @@ const Projects = () => {
   return (
     <div className={styles.projectsContainer}>
       <div id="projects" className={styles.ref}></div>
-      <div className={styles.subtitle}>Projects</div>
+      <div className="subtitle">Projects</div>
       <div className={styles.projectList}>
         {projectList.map((project, i) => (
           <Project

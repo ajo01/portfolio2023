@@ -94,6 +94,7 @@ const GlobePage = () => {
           handleClick={() => navigate("/about")}
           text="START"
           style={{ marginTop: 40 }}
+          color="rgb(224, 245, 255)"
         />
       </div>
       <Msg />
