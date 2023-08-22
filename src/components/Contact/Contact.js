@@ -49,7 +49,7 @@ const Contact = () => {
     <div className="container" style={{ paddingBottom: 300 }}>
       <div id="contact" className={styles.ref}></div>
       <div className="subtitle"> Contact</div>
-      <div className="component-text">
+      <div className={styles.text}>
         Have a question or want to work together? Get in touch!
       </div>
 
@@ -60,66 +60,66 @@ const Contact = () => {
       </div>
 
       <form className={styles.form} ref={form} onChange={handleInputChange}>
-        <div className={styles.leftBox}>
-          <div className={styles.inputContainer}>
-            <input
-              className={styles.nameInput}
-              type="text"
-              required
-              minLength={1}
-              placeholder="Full Name"
-              name="from_name"
-            />
+        <div className={styles.formContainer}>
+          <div className={styles.leftBox}>
+            <div className={styles.inputContainer}>
+              <input
+                className={styles.nameInput}
+                type="text"
+                required
+                minLength={1}
+                placeholder="Full Name"
+                name="from_name"
+              />
 
-            <input
-              className={styles.emailInput}
-              type="email"
+              <input
+                className={styles.emailInput}
+                type="email"
+                required
+                placeholder="Email"
+                name="email"
+              />
+            </div>
+
+            <textarea
+              id={styles.msg}
+              minLength={1}
+              placeholder="Type your message here"
+              name="message"
               required
-              placeholder="Email"
-              name="email"
             />
           </div>
 
-          <textarea
-            id={styles.msg}
-            minLength={1}
-            placeholder="Type your message here"
-            name="message"
-            required
-          />
-          <div id={styles.submit}>
-            <GlowButton
-              handleClick={handleSubmitClick}
-              text="Submit"
-              disabledStyle={{ cursor: "not-allowed" }}
-              isDisabled={!isFormValid}
-              isBlue={true}
-            />
-            {submitVisible && (
-              <div className={styles.submitMsg}>Submitted!</div>
-            )}
+          <div className={styles.rightBox}>
+            <div className={styles.title}>LinkedIn</div>
+            <a
+              href="https://www.linkedin.com/in/amyjo1/"
+              style={{
+                paddingLeft: 0,
+                fontSize: 18,
+                color: "#8bd5ff",
+              }}
+            >
+              Amy Jo
+            </a>
+            <div className={styles.title} style={{ marginTop: 50 }}>
+              Location
+            </div>
+            <div>
+              <div>UBC Vancouver</div>
+              <div>British Columbia, Canada</div>
+            </div>
           </div>
         </div>
-
-        <div className={styles.rightBox}>
-          <div className={styles.title}>LinkedIn</div>
-          <a
-            href="https://www.linkedin.com/in/amyjo1/"
-            style={{
-              paddingLeft: 0,
-              fontSize: 18,
-              color: "#8bd5ff",
-            }}
-          >
-            Amy Jo
-          </a>
-          <div className={styles.title} style={{ marginTop: 50 }}>
-            Location
-          </div>
-          <div>
-            <div>UBC Vancouver</div>
-            <div>British Columbia, Canada</div>
-          </div>
+        <div id={styles.submit}>
+          <GlowButton
+            handleClick={handleSubmitClick}
+            text="Submit"
+            disabledStyle={{ cursor: "not-allowed" }}
+            isDisabled={!isFormValid}
+            isBlue={true}
+          />
+          {submitVisible && <div className={styles.submitMsg}>Submitted!</div>}
         </div>
       </form>
     </div>

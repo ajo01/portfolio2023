@@ -2,12 +2,23 @@
   margin: auto;
   margin-top: 40px;
   justify-content: center;
+}
+
+.formContainer {
   display: flex;
+  justify-content: center;
 }
 
 .ref {
   position: absolute;
   top: 50px;
+}
+
+.text {
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 24px;
 }
 
 .leftBox {
@@ -32,12 +43,12 @@
 .rightBox {
   width: 30%;
   padding: 0 40px;
+  text-align: left;
 }
 
 #submit {
   margin-top: 30px;
-  text-align: left;
-  display: flex;
+  display: block;
 }
 
 .submitMsg {
