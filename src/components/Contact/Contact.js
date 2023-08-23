@@ -49,12 +49,6 @@ const Contact = () => {
         Have a question or want to work together? Get in touch!
       </div>
 
-      <div className={styles.night}>
-        <div className={styles.shooting_star} />
-        <div className={styles.shooting_star} />
-        <div className={styles.shooting_star} />
-      </div>
-
       <form className={styles.form} ref={form} onChange={handleInputChange}>
         <div className={styles.formContainer}>
           <div className={styles.leftBox}>

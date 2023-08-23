@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import { createNoise3D } from "simplex-noise";
+import theme from "../../styles/colors";
 
 const rayCount = 500;
 const rayPropCount = 8;
@@ -11,7 +12,7 @@ const baseSpeed = 0.05;
 const rangeSpeed = 0.1;
 const baseWidth = 10;
 const rangeWidth = 20;
-const baseHue = 175; // color
+const baseHue = theme.aurora.blue;
 const rangeHue = 60;
 const baseTTL = 50;
 const rangeTTL = 100;
