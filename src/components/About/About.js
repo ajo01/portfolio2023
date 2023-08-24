@@ -13,9 +13,10 @@ const About = () => {
         passion for crafting interactive and immersive digital experiences, and
         have worked with various technologies such as MERN stack, TypeScript,
         Next.js, Python, Java, Tailwind, Styled Components, Framer Motion,
-        Webpack, Babel, D3.js, Adobe Suite, and Docker. Previous experience
-        includes designing major features at Jostle, as well as researching and
-        developing cutting-edge document processing technologies at Apryse.
+        MaterialUI, Webpack, Babel, D3.js, Adobe Suite, and Docker. Previous
+        experience includes designing major features at Jostle, as well as
+        researching and developing cutting-edge document processing technologies
+        at Apryse.
       </div>
       {/* <div className={styles.luminaireContainer}>
         <div className={styles.luminaire} />
