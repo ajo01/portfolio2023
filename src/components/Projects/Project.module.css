@@ -14,11 +14,6 @@
   grid-gap: 60px;
 }
 
-.tags {
-  display: flex;
-  padding-bottom: 16px;
-}
-
 .project:nth-child(even) .imgInfo {
   margin-top: 350px; /* Adjust as needed */
 }
@@ -37,6 +32,12 @@
   top: 200px;
 }
 
+.info {
+  padding: 20px 40px 40px 0;
+  font-size: 1rem;
+  color: var(--grayText);
+}
+
 .name {
   font-size: 1.7rem;
   color: white;
@@ -47,10 +48,9 @@
   padding: 24px 0 16px 0;
 }
 
-.info {
-  padding: 20px 40px 40px 0;
-  font-size: 1rem;
-  color: var(--grayText);
+.tags {
+  display: flex;
+  padding-bottom: 16px;
 }
 
 .imgContainer {

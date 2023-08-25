@@ -13,8 +13,8 @@ const Project = ({ src, desc, link, index, name, tags }) => {
 
           <div className={styles.desc}>{desc}</div>
           <div className={styles.tags}>
-            {tags.map((text) => (
-              <Tag text={text} />
+            {tags.map((text, i) => (
+              <Tag key={i} text={text} />
             ))}
           </div>
           <div>{link && <a href={link}>See here</a>}</div>
