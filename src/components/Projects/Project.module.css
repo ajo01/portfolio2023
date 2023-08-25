@@ -82,9 +82,19 @@
 @media screen and (max-width: 1000px) {
   .projectList {
     display: block;
+    grid-template-columns: none;
   }
 
   .subtitle {
     padding-left: 0;
+  }
+
+  .project:nth-child(even) .imgInfo {
+    margin-top: 0px; /* Adjust as needed */
+  }
+
+  .project {
+    height: auto;
+    margin-bottom: 200px;
   }
 }
