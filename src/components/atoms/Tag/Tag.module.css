@@ -1,0 +1,12 @@
+.tag {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.tag:last-of-type {
+  margin-right: 0;
+}

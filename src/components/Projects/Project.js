@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Project.module.css";
-const Project = ({ src, desc, link, index, name }) => {
+import Tag from "../atoms/Tag";
+const Project = ({ src, desc, link, index, name, tags }) => {
   return (
     <div className={styles.project}>
       <div className={styles.imgInfo}>
@@ -11,6 +12,11 @@ const Project = ({ src, desc, link, index, name }) => {
           <div className={styles.name}>{name}</div>
 
           <div className={styles.desc}>{desc}</div>
+          <div className={styles.tags}>
+            {tags.map((text) => (
+              <Tag text={text} />
+            ))}
+          </div>
           <div>{link && <a href={link}>See here</a>}</div>
         </div>
       </div>
