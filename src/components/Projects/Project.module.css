@@ -1,17 +1,19 @@
+.projectsWrapper {
+  position: relative;
+}
+
 .projectsContainer {
   padding: 400px 7vw;
   color: white;
   letter-spacing: 2px;
   line-height: 32px;
-  position: relative;
-  overflow: hidden;
 }
 
 .projectList {
   padding-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, minmax(500px, 1fr));
-  grid-gap: 60px;
+  grid-gap: 4vw;
 }
 
 .project:nth-child(even) .imgInfo {
@@ -33,7 +35,7 @@
 }
 
 .info {
-  padding: 20px 40px 40px 0;
+  padding: 20px 0 40px 0;
   font-size: 1rem;
   color: var(--grayText);
 }
@@ -79,7 +81,14 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1250px) {
+  .projectList {
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .projectList {
     display: block;
     grid-template-columns: none;

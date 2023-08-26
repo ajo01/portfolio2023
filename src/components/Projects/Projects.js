@@ -64,21 +64,23 @@ const Projects = () => {
   ];
 
   return (
-    <div className={styles.projectsContainer}>
-      <div id="projects" className={styles.ref}></div>
-      <div className="subtitle">Projects</div>
-      <div className={styles.projectList}>
-        {projectList.map((project, i) => (
-          <Project
-            key={i}
-            name={project.name}
-            src={project.src}
-            desc={project.description}
-            link={project.link}
-            index={i}
-            tags={project.tags}
-          />
-        ))}
+    <div className={styles.projectsWrapper}>
+      <div className={styles.projectsContainer}>
+        <div id="projects" className={styles.ref}></div>
+        <div className="subtitle">Projects</div>
+        <div className={styles.projectList}>
+          {projectList.map((project, i) => (
+            <Project
+              key={i}
+              name={project.name}
+              src={project.src}
+              desc={project.description}
+              link={project.link}
+              index={i}
+              tags={project.tags}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

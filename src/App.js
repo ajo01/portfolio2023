@@ -31,15 +31,11 @@ function App() {
 
   const AboutPage = () => (
     <div className="App" ref={scrollableDivRef} onScroll={handleScroll}>
-      <Aurora />
-      <div className="auroraWrapper" />
-      <div className="component">
-        <About />
-        <Projects />
-        <Contact />
-      </div>
+      <About />
+      <Projects />
+      <Contact />
 
-      <Nav />
+      {/* <Nav /> */}
     </div>
   );
 
