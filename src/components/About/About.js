@@ -16,12 +16,12 @@ const About = () => {
             I'm a senior student pursuing Computer Science at the University of
             British Columbia in Vancouver. I have a combined 16 months of
             industry experience in fullstack web development at Jostle and
-            Apryse. My work experiences encompasses researching and developing
+            Apryse. My work experience encompasses researching and developing
             technologies, building internal tools, API design, publishing npm
             libraries, and crafting pixel perfect corporate landing pages. I
             have a passion for creating digital experiences that are interactive
-            and immersive, and take pleasure in experimenting with what is
-            possible in the web.
+            and immersive, and I take pleasure in experimenting with what is
+            possible on the web.
           </div>
         </div>
       </div>
