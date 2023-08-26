@@ -27,7 +27,7 @@ const Tag = ({ text }) => {
     } else if (text === "Firebase") {
       return theme.tags.orange;
     } else if (text === "D3.js") {
-      return theme.tags.orange;
+      return theme.tags.lightGreen;
     } else if (text === "OpenAI") {
       return theme.tags.grey;
     } else if (text === "Sanity") {
