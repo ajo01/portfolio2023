@@ -1,5 +1,5 @@
 .about {
-  padding: 150px 200px 200px 200px;
+  padding: 150px 15vw 200px;
   color: white;
 }
 
@@ -11,6 +11,11 @@
 .ref {
   position: absolute;
   top: -60px;
+}
+
+.text {
+  line-height: 30px;
+  letter-spacing: 2px;
 }
 
 .luminaire {

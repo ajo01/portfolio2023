@@ -17,42 +17,49 @@ const Projects = () => {
       description: "Corporate Landing Page",
       src: apryse,
       link: "https://apryse.com/",
+      tags: ["TypeScript", "Next.js", "TailwindCSS", "Sanity"],
     },
     {
       name: "WebViewer",
       description: "Corporate Flagship Product",
       src: web,
       link: "https://showcase.apryse.com/?share=facebook",
+      tags: ["JavaScript", "React", "Firebase"],
     },
     {
       name: "CourseGPT",
       description: "Educational Chat Interface",
       src: gpt,
       link: "https://course-gpt.herokuapp.com/",
+      tags: ["MERN", "OpenAI", "D3.js", "FramerMotion", "Tensorflow"],
     },
     {
       name: "Web Cosedit",
       description: "Object-Level PDF Editor",
       src: cosedit,
       link: "https://cosedit.com/",
+      tags: ["React", "JavaScript", "MaterialUI", "PDFNet"],
     },
     {
       name: "QR Scanner",
       description: "Internal Progressive Web App",
       src: qr,
       link: "",
+      tags: ["TypeScript", "Firebase"],
     },
     {
       name: "CanvasToPDF",
       description: "Vector Appearances Library",
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
+      tags: ["JavaScript", "npm"],
     },
     {
       name: "Aurora",
       description: "UI Component Library",
       src: aurora,
       link: "https://www.npmjs.com/package/@nwplusdev/aurora",
+      tags: ["React", "Styled Components", "Storybook"],
     },
   ];
 
@@ -69,6 +76,7 @@ const Projects = () => {
             desc={project.description}
             link={project.link}
             index={i}
+            tags={project.tags}
           />
         ))}
       </div>
