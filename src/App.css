@@ -64,17 +64,12 @@
   font-weight: 600;
   letter-spacing: 5px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   text-shadow: 0px 0px 10px #fff, 0px 0px 10px #005582;
 }
 
-.component-text {
-  line-height: 30px;
-  letter-spacing: 2px;
-}
-
 .container {
-  padding: 200px;
+  padding: 200px 10vw;
   color: white;
   letter-spacing: 2px;
   line-height: 32px;

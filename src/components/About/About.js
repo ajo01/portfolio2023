@@ -6,7 +6,7 @@ const About = () => {
     <div className={styles.about}>
       <div id="about" className={styles.ref}></div>
       <div className="subtitle">About</div>
-      <div className="component-text">
+      <div className={styles.text}>
         I'm a senior Computer Science student at the University of British
         Columbia in Vancouver. I have a combined 16 months of industry
         experience in fullstack web development, R&D, and API design. I have a
