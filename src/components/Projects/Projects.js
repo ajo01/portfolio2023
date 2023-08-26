@@ -31,14 +31,7 @@ const Projects = () => {
       description: "Educational Chat Interface",
       src: gpt,
       link: "https://course-gpt.herokuapp.com/",
-      tags: [
-        "MERN",
-        "OpenAI",
-        "ChakraUI",
-        "D3.js",
-        "FramerMotion",
-        "Tensorflow",
-      ],
+      tags: ["MERN", "OpenAI", "D3.js", "FramerMotion", "Tensorflow"],
     },
     {
       name: "Web Cosedit",

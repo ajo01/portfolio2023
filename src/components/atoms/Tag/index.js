@@ -10,7 +10,7 @@ const Tag = ({ text }) => {
       return theme.tags.blue;
     } else if (text === "React") {
       return theme.tags.lightBlue;
-    } else if (text === "ChakraUI") {
+    } else if (text === "ChakraUI" || text === "MaterialUI") {
       return theme.tags.green;
     } else if (text === "Styled Components") {
       return theme.tags.purple;
@@ -18,8 +18,6 @@ const Tag = ({ text }) => {
       return theme.tags.purple;
     } else if (text === "Next.js") {
       return theme.tags.indigo;
-    } else if (text === "MaterialUI") {
-      return theme.tags.purple;
     } else if (text === "PDFNet") {
       return theme.tags.blue;
     } else if (text === "Storybook") {
