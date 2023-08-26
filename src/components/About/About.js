@@ -13,16 +13,15 @@ const About = () => {
 
           <div className="subtitle">About</div>
           <div className={styles.text}>
-            I'm a senior Computer Science student at the University of British
-            Columbia in Vancouver. I have a combined 16 months of industry
-            experience in fullstack web development, R&D, and API design. I have
-            a passion for crafting interactive and immersive digital
-            experiences, and have worked with various technologies such as MERN
-            stack, TypeScript, Next.js, Python, Java, Tailwind, Styled
-            Components, Framer Motion, MaterialUI, Webpack, Babel, D3.js, Adobe
-            Suite, and Docker. Previous experience includes designing major
-            features at Jostle, as well as researching and developing
-            cutting-edge document processing technologies at Apryse.
+            I'm a senior student pursuing Computer Science at the University of
+            British Columbia in Vancouver. I have a combined 16 months of
+            industry experience in fullstack web development at Jostle and
+            Apryse. My work experiences encompasses researching and developing
+            technologies, building internal tools, API design, publishing npm
+            libraries, and crafting pixel perfect corporate landing pages. I
+            have a passion for creating digital experiences that are interactive
+            and immersive, and take pleasure in experimenting with what is
+            possible in the web.
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const Tag = ({ text }) => {
       return theme.tags.blue;
     } else if (text === "React") {
       return theme.tags.lightBlue;
-    } else if (text === "ChakraUI" || text === "MaterialUI") {
+    } else if (text === "Webpack" || text === "MaterialUI") {
       return theme.tags.green;
     } else if (text === "Styled Components") {
       return theme.tags.purple;

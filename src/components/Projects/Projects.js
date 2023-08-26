@@ -49,17 +49,17 @@ const Projects = () => {
     },
     {
       name: "CanvasToPDF",
-      description: "Vector Appearances Library",
+      description: "Vector-Based Annotation Library",
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
-      tags: ["JavaScript", "npm"],
+      tags: ["JavaScript", "npm", "Webpack"],
     },
     {
       name: "Aurora",
       description: "UI Component Library",
       src: aurora,
       link: "https://www.npmjs.com/package/@nwplusdev/aurora",
-      tags: ["React", "Styled Components", "Storybook"],
+      tags: ["React", "Styled Components", "Storybook", "npm"],
     },
   ];
 
