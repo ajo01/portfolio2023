@@ -21,7 +21,7 @@ const Projects = () => {
     },
     {
       name: "WebViewer",
-      description: "Corporate Flagship Product",
+      description: "Company Flagship Product",
       src: web,
       link: "https://showcase.apryse.com/?share=facebook",
       tags: ["JavaScript", "React", "Firebase"],
