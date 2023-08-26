@@ -21,6 +21,10 @@ code {
     monospace;
 }
 
-* {
-  outline: 1px solid #f00 !important;
+html {
+  scroll-behavior: smooth !important;
 }
+
+/* * {
+  outline: 1px solid #f00 !important;
+} */

@@ -35,7 +35,7 @@ function App() {
       <Projects />
       <Contact />
 
-      {/* <Nav /> */}
+      <Nav />
     </div>
   );
 

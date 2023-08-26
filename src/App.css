@@ -8,7 +8,6 @@
   position: relative;
   background-color: black;
   font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
   opacity: 0;
   animation: fadeInAnimation 0.8s ease-in-out forwards;
 }
