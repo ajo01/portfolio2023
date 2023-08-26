@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .about {
+  .container {
     padding: 150px 5vw;
     color: white;
   }

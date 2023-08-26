@@ -34,7 +34,6 @@ function App() {
       <About />
       <Projects />
       <Contact />
-
       <Nav />
     </div>
   );
