@@ -88,7 +88,7 @@ const GlobePage = () => {
       <div className="text-container">
         <div className="title">AMY JO</div>
         <div className="sub">
-          Software Engineer | Web Developer | Data Visualization
+          Software Engineer | Web Developer | Interaction Designer
         </div>
         <GlowButton
           handleClick={() => navigate("/about")}
