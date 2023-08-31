@@ -49,7 +49,7 @@ const Projects = () => {
     },
     {
       name: "CanvasToPDF",
-      description: "Vector-Based Annotation Library",
+      description: "Vector Graphics Library",
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
       tags: ["JavaScript", "npm", "Webpack"],
