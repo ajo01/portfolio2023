@@ -8,17 +8,6 @@
   position: relative;
   background-color: black;
   font-family: "Inter", sans-serif;
-  opacity: 0;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .globe-container {
@@ -27,7 +16,6 @@
   left: 0;
   width: 100%;
 }
-
 
 .title {
   font-size: 75px;

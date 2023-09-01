@@ -22,7 +22,7 @@
   letter-spacing: 15px;
   background-color: rgba(30, 35, 70, 0.19);
   opacity: 0;
-  animation: fadeInAnimation 0.8s ease-in-out forwards;
+  animation: fadeInAnimation 1.2s ease-in-out forwards;
 }
 
 @keyframes fadeInAnimation {
