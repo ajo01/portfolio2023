@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Project.module.css";
 import Tag from "../atoms/Tag";
-const Project = ({ src, desc, link, name, tags }) => {
+const Project = ({ src, desc, link, name, tags, year }) => {
   return (
     <div className={styles.project}>
       <div className={styles.imgContainer}>
@@ -10,7 +10,10 @@ const Project = ({ src, desc, link, name, tags }) => {
       <div className={styles.info}>
         <div className={styles.name}>{name}</div>
 
-        <div className={styles.desc}>{desc}</div>
+        <div className={styles.descContainer}>
+          <div>{desc}</div>
+          <div className={styles.year}>{year}</div>
+        </div>
         <div className={styles.tags}>
           {tags.map((text, i) => (
             <Tag key={i} text={text} />

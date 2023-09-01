@@ -18,6 +18,7 @@ const Projects = () => {
       src: apryse,
       link: "https://apryse.com/",
       tags: ["TypeScript", "Next.js", "TailwindCSS", "Sanity"],
+      year: 2022,
     },
     {
       name: "WebViewer",
@@ -25,6 +26,7 @@ const Projects = () => {
       src: web,
       link: "https://showcase.apryse.com/?share=facebook",
       tags: ["JavaScript", "React", "Firebase"],
+      year: 2022,
     },
     {
       name: "CourseGPT",
@@ -32,6 +34,7 @@ const Projects = () => {
       src: gpt,
       link: "https://course-gpt.herokuapp.com/",
       tags: ["MERN", "OpenAI", "D3.js", "FramerMotion", "Tensorflow"],
+      year: 2023,
     },
     {
       name: "Web Cosedit",
@@ -39,6 +42,7 @@ const Projects = () => {
       src: cosedit,
       link: "https://cosedit.com/",
       tags: ["React", "JavaScript", "MaterialUI", "PDFNet"],
+      year: 2022,
     },
     {
       name: "CanvasToPDF",
@@ -46,6 +50,7 @@ const Projects = () => {
       src: canvas,
       link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
       tags: ["JavaScript", "npm", "Webpack"],
+      year: 2022,
     },
     {
       name: "Aurora",
@@ -53,6 +58,7 @@ const Projects = () => {
       src: aurora,
       link: "https://www.npmjs.com/package/@nwplusdev/aurora",
       tags: ["React", "Styled Components", "Storybook", "npm"],
+      year: 2022,
     },
     {
       name: "QR Scanner",
@@ -60,6 +66,7 @@ const Projects = () => {
       src: qr,
       link: "",
       tags: ["TypeScript", "Firebase"],
+      year: 2022,
     },
   ];
 
@@ -78,6 +85,7 @@ const Projects = () => {
               link={project.link}
               index={i}
               tags={project.tags}
+              year={project.year}
             />
           ))}
         </div>

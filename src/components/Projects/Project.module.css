@@ -40,8 +40,15 @@
   font-weight: 600;
 }
 
-.desc {
-  padding: 24px 0 16px 0;
+.descContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.year {
+  color: white;
+  font-weight: 700;
 }
 
 .tags {
@@ -77,13 +84,6 @@
 
 @media screen and (max-width: 1250px) {
   .projectList {
-    grid-template-columns: repeat(2, minmax(400px, 1fr));
-    grid-gap: 16px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .projectList {
     display: block;
     grid-template-columns: none;
   }
@@ -92,16 +92,13 @@
     padding-left: 0;
   }
 
-  .project:nth-child(2) {
-    margin-top: 0;
-  }
-
-  .project:nth-child(odd) {
-    margin-top: 0px;
-  }
-
   .project {
     height: auto;
     margin-bottom: 200px;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
   }
 }
