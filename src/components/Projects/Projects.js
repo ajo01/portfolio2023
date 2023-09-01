@@ -41,13 +41,6 @@ const Projects = () => {
       tags: ["React", "JavaScript", "MaterialUI", "PDFNet"],
     },
     {
-      name: "QR Scanner",
-      description: "Internal Progressive Web App",
-      src: qr,
-      link: "",
-      tags: ["TypeScript", "Firebase"],
-    },
-    {
       name: "CanvasToPDF",
       description: "Vector Graphics Library",
       src: canvas,
@@ -60,6 +53,13 @@ const Projects = () => {
       src: aurora,
       link: "https://www.npmjs.com/package/@nwplusdev/aurora",
       tags: ["React", "Styled Components", "Storybook", "npm"],
+    },
+    {
+      name: "QR Scanner",
+      description: "Internal Progressive Web App",
+      src: qr,
+      link: "",
+      tags: ["TypeScript", "Firebase"],
     },
   ];
 

@@ -16,18 +16,6 @@
   grid-gap: 4vw;
 }
 
-.project:nth-child(2) {
-  margin-top: 350px;
-}
-
-.project:nth-child(odd) {
-  margin-top: -350px; /* Adjust as needed */
-}
-
-.project:first-of-type {
-  margin-top: 0;
-}
-
 .project {
   width: 100%;
   display: block;
@@ -68,12 +56,12 @@
 
 .img {
   max-width: 100%;
-  min-height: 350px;
+  height: 50vh;
   transition: transform 0.3s ease-out;
 }
 
 .img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transform-origin: center;
   animation: doubleEffect 0.3s ease-in-out;
 }
