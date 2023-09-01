@@ -28,17 +28,6 @@
   width: 100%;
 }
 
-.text-container {
-  position: absolute;
-  width: 100%;
-  color: rgba(228, 229, 247, 0.879);
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  letter-spacing: 15px;
-  background-color: rgba(30, 35, 70, 0.19);
-}
 
 .title {
   font-size: 75px;

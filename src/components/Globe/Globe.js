@@ -85,7 +85,7 @@ const GlobePage = () => {
           backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
         />
       </div>
-      <div className="text-container">
+      <div className={styles.textContainer}>
         <div className="title">AMY JO</div>
         <div className="sub">
           Software Engineer | Web Developer | Interaction Designer
