@@ -1,7 +1,14 @@
 .aboutWrapper {
   position: relative;
-  top: 80px;
   left: 0;
+  text-align: left;
+}
+
+.title {
+  font-size: 82px;
+  letter-spacing: 10px;
+  margin-bottom: 32px;
+  text-shadow: 0px 0px 10px #fff, 0px 0px 10px #005582;
 }
 
 .about {
@@ -14,7 +21,8 @@
 }
 
 .container {
-  padding: 150px 15vw 200px;
+  width: 40%;
+  padding: 25vh 0 0vh 10vw;
   color: white;
 }
 
@@ -30,7 +38,7 @@
 
 .text {
   line-height: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .luminaire {

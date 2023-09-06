@@ -10,16 +10,6 @@ import { setDetachNav } from "./redux/uiSlice";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const scrollableDivRef = useRef(null);
-  const dispatch = useDispatch();
-
-  const handleScroll = async () => {
-    if (scrollableDivRef.current) {
-      const scrollTop = scrollableDivRef.current.scrollTop;
-      await dispatch(setDetachNav(scrollTop >= 0));
-    }
-  };
-
   const Home = () => {
     return (
       <div className="App">
@@ -28,14 +18,7 @@ function App() {
     );
   };
 
-  const AboutPage = () => (
-    <div className="App" ref={scrollableDivRef} onScroll={handleScroll}>
-      <About />
-      <Projects />
-      <Contact />
-      <Nav />
-    </div>
-  );
+  const AboutPage = () => <About />;
 
   return (
     <Routes>

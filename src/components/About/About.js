@@ -11,17 +11,19 @@ const About = () => {
         <div className={styles.container}>
           <div id="about" className={styles.ref}></div>
 
-          <div className="subtitle">About</div>
+          <div className={styles.title}>Welcome</div>
           <div className={styles.text}>
-            I'm a senior student pursuing Computer Science at the University of
-            British Columbia in Vancouver. I have a combined 16 months of
-            industry experience in fullstack web development at Jostle and
-            Apryse. My work experience encompasses researching and developing
-            technologies, building internal tools, API design, publishing npm
-            libraries, and crafting pixel perfect corporate landing pages. I
-            have a passion for creating digital experiences that are interactive
-            and immersive, and I take pleasure in experimenting with what is
-            possible on the web.
+            I'm Amy, a senior student pursuing Computer Science at the
+            University of British Columbia based in Vancouver, Canada. I am
+            experienced in frontend and fullstack development, having previously
+            designed high performance user interfaces and pixel-perfect landing
+            pages.
+          </div>
+          <br />
+          <div className={styles.text}>
+            I have a passion for creating cutting-edge digital experiences that
+            are interactive and immersive, and I enjoy experimenting with what
+            is possible on the web.
           </div>
         </div>
       </div>
