@@ -18,12 +18,10 @@ function App() {
     );
   };
 
-  const AboutPage = () => <About />;
-
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<AboutPage />} />
+      <Route path="/about" element={<About />} />
     </Routes>
   );
 }

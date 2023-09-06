@@ -52,13 +52,7 @@ a {
 }
 
 .auroraWrapper {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0.6881346288515406) 8%,
-    rgba(20, 20, 41, 0.3155856092436975) 21%,
-    rgba(29, 29, 61, 0.32) 100%
-  );
+  background: rgba(0, 0, 0, 0.223);
   width: 100%;
   height: 100%;
   position: absolute;
