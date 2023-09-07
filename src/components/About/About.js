@@ -50,7 +50,6 @@ const projectList = [
     subtitle: "Object-Level PDF Editor",
     description:
       "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types",
-
     src: cosedit,
     link: "https://cosedit.com/",
     tags: ["React", "JavaScript", "MaterialUI", "PDFNet"],
@@ -61,7 +60,6 @@ const projectList = [
     subtitle: "Vector Graphics Library",
     description:
       "An npm library for exporting vector-quality PDFs using the Canvas API",
-
     src: canvas,
     link: "https://npmjs.com/package/@pdftron/canvas-to-pdf",
     tags: ["JavaScript", "npm", "Webpack"],
@@ -71,15 +69,17 @@ const projectList = [
     name: "Aurora",
     subtitle: "UI Component Library",
     src: aurora,
-    description: "Library",
+    description:
+      "React Library for bringing beautiful UI elements ready for production",
     link: "https://www.npmjs.com/package/@nwplusdev/aurora",
     tags: ["React", "Styled Components", "Storybook", "npm"],
     year: 2022,
   },
   {
     name: "QR Scanner",
-    subtitle: "Internal Progressive Web App",
-    description: "Library",
+    subtitle: "QR Scanner",
+    description:
+      "Progressive web app used internally to manage up to 1000+ hackathon participants",
     src: qr,
     link: "",
     tags: ["TypeScript", "Firebase"],
