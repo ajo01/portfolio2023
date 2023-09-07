@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import Aurora from "../Aurora/Aurora";
+import Menu from "../Menu";
 
 const About = () => {
   return (
@@ -26,6 +27,7 @@ const About = () => {
             is possible on the web.
           </div>
         </div>
+        <Menu />
       </div>
     </div>
   );

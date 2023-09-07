@@ -1,0 +1,31 @@
+.menuSection {
+  position: absolute;
+  top: 20vh;
+  color: rgb(102, 102, 102);
+  right: 12vw;
+}
+
+.title {
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 10px #fff, 0px 0px 10px #005582;
+  color: white;
+}
+
+.menu {
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.item {
+  padding: 20px;
+  width: 250px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  color: white;
+  letter-spacing: 1px;
+  background-color: rgba(0, 0, 0, 0.162);
+}
