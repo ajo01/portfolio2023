@@ -20,9 +20,7 @@ const Nav = () => {
     <div className={styles.nav}>
       <div className={styles.navDivContainer}>
         <NavDiv text="Home" onClick={() => navigate("/")} />
-        <NavDiv id="about" text="About" />
-        <NavDiv id="projects" text="Projects" />
-        <NavDiv id="contact" text="Contact" />
+        <NavDiv text="About" />
       </div>
     </div>
   );

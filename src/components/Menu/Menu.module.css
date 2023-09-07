@@ -9,6 +9,7 @@
   font-size: 30px;
   letter-spacing: 4px;
   color: white;
+  font-weight: 700;
 }
 
 .menu {
@@ -25,5 +26,5 @@
 
 .item:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.162);
+  letter-spacing: 1px;
 }
