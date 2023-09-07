@@ -124,13 +124,17 @@ const About = () => {
           <div className={styles.subtitle}>
             {projectList[selectedProject].subtitle}
           </div>
-          <img
-            className={styles.img}
-            src={projectList[selectedProject].src}
-            alt=""
-          />
-          <div className={styles.text}>
-            {projectList[selectedProject].description}
+          <div className={styles.imgContainer}>
+            <img
+              className={styles.img}
+              src={projectList[selectedProject].src}
+              alt=""
+            />
+            <div className={styles.middle}>
+              <div className={styles.middleText}>
+                {projectList[selectedProject].description}
+              </div>
+            </div>
           </div>
           <div className={styles.tags}>
             {projectList[selectedProject].tags.map((text, i) => (
