@@ -51,15 +51,6 @@ a {
   text-decoration: none;
 }
 
-.auroraWrapper {
-  background: rgba(0, 0, 0, 0.223);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 @media screen and (max-width: 1000px) {
   .container {
     padding: 5vw;
