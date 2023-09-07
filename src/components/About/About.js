@@ -49,7 +49,7 @@ const projectList = [
     name: "Web Cosedit",
     subtitle: "Object-Level PDF Editor",
     description:
-      "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types. Highly scalable and works with thousand-paged documents",
+      "A powerful PDF editor from scratch that parses native document data to enable editing for all low-level object types",
 
     src: cosedit,
     link: "https://cosedit.com/",
@@ -133,14 +133,15 @@ const About = () => {
             <div className={styles.middle}>
               <div className={styles.middleText}>
                 {projectList[selectedProject].description}
+                <div className={styles.tags}>
+                  {projectList[selectedProject].tags.map((text, i) => (
+                    <Tag key={i} text={text} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-          <div className={styles.tags}>
-            {projectList[selectedProject].tags.map((text, i) => (
-              <Tag key={i} text={text} />
-            ))}
-          </div>
+
           <a href={projectList[selectedProject].link}>See here</a>
         </div>
         <Menu
