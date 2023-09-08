@@ -75,16 +75,6 @@ const projectList = [
     tags: ["React", "Styled Components", "Storybook", "npm"],
     year: 2022,
   },
-  {
-    name: "QR Scanner",
-    subtitle: "QR Scanner",
-    description:
-      "Progressive web app used internally to manage up to 1000+ hackathon participants",
-    src: qr,
-    link: "",
-    tags: ["TypeScript", "Firebase"],
-    year: 2022,
-  },
 ];
 
 const About = () => {
