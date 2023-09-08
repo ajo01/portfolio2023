@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Project.module.css";
-import Tag from "../atoms/Tag";
 const Project = ({ src, desc, link, name, tags, year }) => {
   return (
     <div className={styles.project}>
