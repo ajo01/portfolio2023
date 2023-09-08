@@ -2,10 +2,11 @@ import "./App.css";
 import About from "./components/About/About";
 import GlobePage from "./components/Globe/Globe";
 import { Route, Routes } from "react-router-dom";
-import Nav from "./components/Nav/Nav";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
   const Home = () => {
     return (
       <div className="App">
@@ -17,7 +18,9 @@ function App() {
   const AboutPage = () => (
     <div className="App">
       <About />
-      <Nav />
+      <div className="home-btn">
+        <button onClick={() => navigate("/")}>Home</button>
+      </div>
     </div>
   );
 
