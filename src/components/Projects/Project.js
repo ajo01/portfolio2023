@@ -14,11 +14,6 @@ const Project = ({ src, desc, link, name, tags, year }) => {
           <div>{desc}</div>
           <div className={styles.year}>{year}</div>
         </div>
-        <div className={styles.tags}>
-          {tags.map((text, i) => (
-            <Tag key={i} text={text} />
-          ))}
-        </div>
         {link && <a href={link}>See here</a>}
       </div>
     </div>
