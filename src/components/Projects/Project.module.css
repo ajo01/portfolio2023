@@ -3,7 +3,7 @@
 }
 
 .projectsContainer {
-  padding: 400px 7vw;
+  padding: 300px 7vw 100px 7vw;
   color: white;
   letter-spacing: 2px;
   line-height: 32px;
@@ -35,7 +35,7 @@
 }
 
 .name {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: 600;
 }
@@ -43,7 +43,7 @@
 .descContainer {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 20px 0;
 }
 
 .year {
@@ -63,7 +63,7 @@
 
 .img {
   max-width: 100%;
-  height: 50vh;
+  height: 45vh;
   transition: transform 0.3s ease-out;
 }
 

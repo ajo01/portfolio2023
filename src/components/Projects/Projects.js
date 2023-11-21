@@ -9,9 +9,19 @@ import canvas from "../../assets/canvas.png";
 import cosedit from "../../assets/cosedit.png";
 import aurora from "../../assets/aurora.png";
 import qr from "../../assets/qr2.png";
+import scatter from "../../assets/scatter.png";
 
 const Projects = () => {
   const projectList = [
+    // Data Visualization Scrolly Telling App
+    {
+      name: "Loneliness: A Data Visualization Story",
+      description: "Coming soon",
+      src: scatter,
+      link: "",
+      tags: ["JavaScript", "D3.js", "React"],
+      year: 2023,
+    },
     {
       name: "Apryse",
       description: "Corporate Landing Page",
